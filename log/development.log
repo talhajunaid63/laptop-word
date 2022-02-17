@@ -2180,3 +2180,1109 @@ Migrating to AddRoleToUser (20220216081056)
   ↳ bin/rails:9
   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ bin/rails:9
+Started GET "/" for ::1 at 2022-02-16 15:27:13 +0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  Rendered home/homepage.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 152ms (Views: 146.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-02-16 15:27:17 +0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.8ms)
+  Rendered devise/shared/_links.html.erb (1.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (18.9ms)
+Completed 200 OK in 64ms (Views: 37.6ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-02-16 15:27:18 +0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (8.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (29.6ms)
+Completed 200 OK in 117ms (Views: 106.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-02-16 15:27:20 +0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (3.0ms)
+  Rendered devise/shared/_links.html.erb (10.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (39.1ms)
+Completed 200 OK in 100ms (Views: 96.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-02-16 15:29:40 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  Rendered home/homepage.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 67ms (Views: 60.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-02-16 15:32:40 +0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (6.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (25.7ms)
+Completed 200 OK in 86ms (Views: 79.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2022-02-16 15:32:50 +0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+CDdH+SCYiOgilwao30m7vWD5rk86C3+/lhmf+NEyYIZmPojv8FhFlja5l/MkCUmcoa19HUM6qVB8DXmjNRIqg==", "user"=>{"email"=>"faheemismail4545@yahoo.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "faheemismail4545@yahoo.com"], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 8ms (ActiveRecord: 0.4ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+CDdH+SCYiOgilwao30m7vWD5rk86C3+/lhmf+NEyYIZmPojv8FhFlja5l/MkCUmcoa19HUM6qVB8DXmjNRIqg==", "user"=>{"email"=>"faheemismail4545@yahoo.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 303ms (Views: 18.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2022-02-16 15:33:06 +0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wiA18mFCIfWTZdYhVCh57y8cU5oNvUix5Txh893GRSnigHF62z8QzU0Jz89EtbC3wtwcWvx/wast1EmygYxeYg==", "user"=>{"email"=>"amjadali@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "amjadali@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 10ms (ActiveRecord: 0.5ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wiA18mFCIfWTZdYhVCh57y8cU5oNvUix5Txh893GRSnigHF62z8QzU0Jz89EtbC3wtwcWvx/wast1EmygYxeYg==", "user"=>{"email"=>"amjadali@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 338ms (Views: 15.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for ::1 at 2022-02-16 15:33:09 +0500
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (2.2ms)
+  Rendered devise/shared/_links.html.erb (5.9ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (20.9ms)
+Completed 200 OK in 90ms (Views: 82.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-02-16 15:33:12 +0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (2.5ms)
+  Rendered devise/shared/_links.html.erb (4.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (25.5ms)
+Completed 200 OK in 108ms (Views: 104.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-02-16 15:33:19 +0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (4.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (20.3ms)
+Completed 200 OK in 109ms (Views: 104.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2022-02-16 15:33:26 +0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/kUVRXBlmw2lvgYNg6hOGM4Z5vUn+yRpHw4x+t7Zrc0f/TJ5KyaYOF3uvEjsRU3QSRy1uG4f4zKgpmJjsUks5Q==", "user"=>{"email"=>"amjadali@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "amjadali@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 11ms (ActiveRecord: 0.5ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/kUVRXBlmw2lvgYNg6hOGM4Z5vUn+yRpHw4x+t7Zrc0f/TJ5KyaYOF3uvEjsRU3QSRy1uG4f4zKgpmJjsUks5Q==", "user"=>{"email"=>"amjadali@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 326ms (Views: 14.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-02-16 15:33:34 +0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (2.1ms)
+  Rendered devise/shared/_links.html.erb (5.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (22.2ms)
+Completed 200 OK in 104ms (Views: 98.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2022-02-16 15:33:45 +0500
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w69budCE1fIEyPqO6LydPz+dI4ayJ6D8ELMqi8GEE9sYCNOARJycEeKcJszvtyg9XTu2InM6+TuS6hDJu4CMIA==", "user"=>{"email"=>"faheemismail4545@yahoo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "faheemismail4545@yahoo.com"], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "faheemismail4545@yahoo.com"], ["encrypted_password", "$2a$12$Ys2FkJGuVWFVdpHYmSS/m.v83d49CP3ry1pGMOqW5EgMeIBtmJcS2"], ["created_at", "2022-02-16 10:33:45.578590"], ["updated_at", "2022-02-16 10:33:45.578590"]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (3.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 353ms (ActiveRecord: 3.8ms)
+
+
+Started GET "/" for ::1 at 2022-02-16 15:33:45 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  Rendered home/homepage.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:15
+Completed 200 OK in 17ms (Views: 15.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-02-16 15:34:22 +0500
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 11ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2022-02-16 15:34:22 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  Rendered home/homepage.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:15
+Completed 200 OK in 22ms (Views: 20.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/logout" for ::1 at 2022-02-16 15:34:35 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+actionpack (5.2.6.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2022-02-16 15:39:43 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/homepage.html.erb:3
+  Rendered home/homepage.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 19ms (Views: 18.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-02-16 15:39:54 +0500
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2022-02-16 15:39:54 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/homepage.html.erb:3
+  Rendered home/homepage.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 29ms (Views: 27.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2022-02-16 15:40:11 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/homepage.html.erb:3
+  Rendered home/homepage.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 74ms (Views: 68.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2022-02-16 15:40:59 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/homepage.html.erb:3
+  Rendered home/homepage.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 29ms (Views: 25.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2022-02-16 15:41:00 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/homepage.html.erb:3
+  Rendered home/homepage.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 26ms (Views: 23.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2022-02-16 15:41:00 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/homepage.html.erb:3
+  Rendered home/homepage.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 25ms (Views: 22.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2022-02-16 15:41:01 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/homepage.html.erb:3
+  Rendered home/homepage.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 41ms (Views: 36.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2022-02-16 15:41:01 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/homepage.html.erb:3
+  Rendered home/homepage.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 17ms (Views: 15.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2022-02-16 15:41:01 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/homepage.html.erb:3
+  Rendered home/homepage.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 21ms (Views: 20.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2022-02-16 15:41:11 +0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/homepage.html.erb:3
+  Rendered home/homepage.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 164ms (Views: 157.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2022-02-16 15:41:12 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/homepage.html.erb:3
+  Rendered home/homepage.html.erb within layouts/application (29.0ms)
+Completed 200 OK in 46ms (Views: 44.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2022-02-16 15:41:12 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/homepage.html.erb:3
+  Rendered home/homepage.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 20ms (Views: 18.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2022-02-16 15:41:12 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/homepage.html.erb:3
+  Rendered home/homepage.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 32ms (Views: 31.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2022-02-16 15:41:13 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/homepage.html.erb:3
+  Rendered home/homepage.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 49ms (Views: 46.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2022-02-16 15:41:13 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/homepage.html.erb:3
+  Rendered home/homepage.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 45ms (Views: 42.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2022-02-16 15:41:13 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/homepage.html.erb:3
+  Rendered home/homepage.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 63ms (Views: 54.3ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for ::1 at 2022-02-16 15:41:13 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/homepage.html.erb:3
+  Rendered home/homepage.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 60ms (Views: 56.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2022-02-16 15:41:13 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/homepage.html.erb:3
+  Rendered home/homepage.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 23ms (Views: 21.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2022-02-16 15:41:13 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/homepage.html.erb:3
+  Rendered home/homepage.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 27ms (Views: 25.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2022-02-16 15:41:14 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/homepage.html.erb:3
+  Rendered home/homepage.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 75ms (Views: 69.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2022-02-16 15:41:14 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/homepage.html.erb:3
+  Rendered home/homepage.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 72ms (Views: 67.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2022-02-16 15:41:14 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/homepage.html.erb:3
+  Rendered home/homepage.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 51ms (Views: 47.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2022-02-16 15:44:22 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/homepage.html.erb:3
+  Rendered home/homepage.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 21ms (Views: 19.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2022-02-16 15:44:23 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/homepage.html.erb:3
+  Rendered home/homepage.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 25ms (Views: 23.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2022-02-16 15:44:23 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/homepage.html.erb:3
+  Rendered home/homepage.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 18ms (Views: 17.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2022-02-16 15:44:24 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/homepage.html.erb:3
+  Rendered home/homepage.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 62ms (Views: 57.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2022-02-16 15:44:24 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/homepage.html.erb:3
+  Rendered home/homepage.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 41ms (Views: 38.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2022-02-16 15:44:24 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/homepage.html.erb:3
+  Rendered home/homepage.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 21ms (Views: 20.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2022-02-16 15:44:24 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/homepage.html.erb:3
+  Rendered home/homepage.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 34ms (Views: 31.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2022-02-16 15:44:29 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/homepage.html.erb:3
+  Rendered home/homepage.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 19ms (Views: 17.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2022-02-16 15:44:37 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/homepage.html.erb:3
+  Rendered home/homepage.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 34ms (Views: 31.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2022-02-16 15:46:32 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/homepage.html.erb:3
+  Rendered home/homepage.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 34ms (Views: 32.0ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2022-02-16 15:46:35 +0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"uZTDmqh00ZjQebe5sWf09wSWRFRJsU1tRbOI+nmzkCeZNIcSEgngoA4Vrleh+j2v6VYLlLhzxHeNW6C7JfmLbA=="}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 9ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2022-02-16 15:46:36 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  Rendered home/homepage.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 33ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-02-16 15:47:42 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  Rendered home/homepage.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 26ms (Views: 23.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-02-16 15:47:43 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  Rendered home/homepage.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 21ms (Views: 19.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-02-16 15:52:05 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  Rendered home/homepage.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 84ms (Views: 80.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-02-16 15:57:30 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  Rendered home/homepage.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 21ms (Views: 19.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-02-16 15:57:31 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  Rendered home/homepage.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 29ms (Views: 26.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-02-16 16:00:21 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  Rendered home/homepage.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 34ms (Views: 29.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-02-16 16:00:22 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  Rendered home/homepage.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 20ms (Views: 18.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-02-16 16:00:22 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  Rendered home/homepage.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 75ms (Views: 69.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-02-16 16:00:35 +0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (17.1ms)
+Completed 200 OK in 71ms (Views: 37.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2022-02-16 16:00:47 +0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XQHZXobaQCYNp1uVC6VXzh3O4Mh2cJjfbP/GzflfWM+bH7exJPdfKD2USO4eQJQ6+lKmr1CnnVESRqryrkwGFg==", "user"=>{"email"=>"faheemismail4545@yahoo.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "faheemismail4545@yahoo.com"], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 354ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2022-02-16 16:00:47 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/homepage.html.erb:3
+  Rendered home/homepage.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 16ms (Views: 15.4ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2022-02-16 16:00:50 +0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ma5rdwMYBdgKPE6THHoBpyOAo0LnWCVzf4YWi45nostaDsoJXvW9HSg3/aOTXEVyCx4vQdHSOT5RVUlUsBGjTQ=="}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2022-02-16 16:00:50 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  Rendered home/homepage.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-02-16 16:04:22 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  Rendered home/homepage.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 18ms (Views: 17.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-02-16 16:04:24 +0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 37ms (Views: 34.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2022-02-16 16:04:34 +0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tYTpQ95mrHfqnVmWf2EQepsRIPI1ECzjFAMctDK2DIMvWgez86eXBsv5gbGHvjAzt8qwgQXB+UdKmp4MwTNnTg==", "user"=>{"email"=>"faheemismail4545@yahoo.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "faheemismail4545@yahoo.com"], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 341ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2022-02-16 16:04:34 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/homepage.html.erb:3
+  Rendered home/homepage.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 12ms (Views: 11.6ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2022-02-16 16:04:50 +0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"WCMTFtLBxElGHEqwx+abZgmPVctNbRhsBNJzq1L5dc2LbnMGLK07j96fhcGxTntpyNIfpFmYH2W+WU7bA6pamg=="}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2022-02-16 16:04:50 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  Rendered home/homepage.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 31ms (Views: 29.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-02-16 16:04:52 +0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.6ms)
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 26ms (Views: 23.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2022-02-16 16:05:02 +0500
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GyfwqrFsuUc3lnXPmxwT5cIwvZ0Z5AmUcQmkhRAPeqHAco690nF+SibQoLVhQZVcm62YX63EeTdiMvTGVFqN5g==", "user"=>{"email"=>"amjadali@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "amjadali@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "amjadali@gmail.com"], ["encrypted_password", "$2a$12$9Gde.wA4wthnIalIqyeQeutbqcJAsV7l9JFqMai05k5F9gSZPwv0G"], ["created_at", "2022-02-16 11:05:02.739722"], ["updated_at", "2022-02-16 11:05:02.739722"]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (3.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 351ms (ActiveRecord: 3.5ms)
+
+
+Started GET "/" for ::1 at 2022-02-16 16:05:02 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/home/homepage.html.erb:3
+  Rendered home/homepage.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2022-02-16 16:05:33 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/home/homepage.html.erb:3
+  Rendered home/homepage.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 71ms (Views: 66.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2022-02-16 16:12:44 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/home/homepage.html.erb:3
+  Rendered home/homepage.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 33ms (Views: 30.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2022-02-16 16:12:45 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/home/homepage.html.erb:3
+  Rendered home/homepage.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 20ms (Views: 18.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2022-02-16 16:12:45 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/home/homepage.html.erb:3
+  Rendered home/homepage.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 26ms (Views: 24.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2022-02-16 16:12:45 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/home/homepage.html.erb:3
+  Rendered home/homepage.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 24ms (Views: 22.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2022-02-16 16:12:45 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/home/homepage.html.erb:3
+  Rendered home/homepage.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 20ms (Views: 19.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2022-02-16 16:12:45 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/home/homepage.html.erb:3
+  Rendered home/homepage.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 25ms (Views: 23.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2022-02-16 16:12:46 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/home/homepage.html.erb:3
+  Rendered home/homepage.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 28ms (Views: 26.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2022-02-16 16:12:46 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/home/homepage.html.erb:3
+  Rendered home/homepage.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 41ms (Views: 38.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2022-02-16 16:12:47 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/home/homepage.html.erb:3
+  Rendered home/homepage.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 53ms (Views: 47.6ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2022-02-16 16:13:34 +0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"yJD5IgX1ftodKo8EAP2OLrVwOWIN/XGJhC2zEOkUKVsSndgLnS76ZI93a2xKuq8QKKF8lFu5g8D/GD1I6H4lbA=="}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2022-02-16 16:13:34 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  Rendered home/homepage.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 21ms (Views: 19.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-02-16 16:13:36 +0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (4.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (23.1ms)
+Completed 200 OK in 102ms (Views: 98.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2022-02-16 16:13:43 +0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HLdSnGjuwJtpMt9Iqj57DW/G2F4t/UraoQCmhjN39ZmG4FhoGTqTfbrBtTqsWcgHTKgBiLZuIiEPaumXhEzUJw==", "user"=>{"email"=>"faheemismail4545@yahoo.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "faheemismail4545@yahoo.com"], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 340ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2022-02-16 16:13:44 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/homepage.html.erb:3
+  Rendered home/homepage.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 14ms (Views: 12.9ms | ActiveRecord: 0.1ms)
+
+
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Started GET "/" for ::1 at 2022-02-16 16:18:27 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/homepage.html.erb:3
+  Rendered home/homepage.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 25ms (Views: 23.2ms | ActiveRecord: 0.1ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to RemoveRoleToUser (20220216112819)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220216112819"]]
+  ↳ bin/rails:9
+  [1m[35m (3.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to RemoveRoleToUser (20220216112819)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.2ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20220216112819"]]
+  ↳ bin/rails:9
+  [1m[35m (3.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to AddRoleToUser (20220216081056)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TEMPORARY TABLE "ausers" ("id" integer NOT NULL PRIMARY KEY, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar DEFAULT NULL, "reset_password_sent_at" datetime DEFAULT NULL, "remember_created_at" datetime DEFAULT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "role" integer DEFAULT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "tindex_ausers_on_reset_password_token" ON "ausers" ("reset_password_token")[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "tindex_ausers_on_email" ON "ausers" ("email")[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "ausers" ("id","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","created_at","updated_at","role")
+                     SELECT "id","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","created_at","updated_at","role" FROM "users"[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "users"[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer NOT NULL PRIMARY KEY, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar DEFAULT NULL, "reset_password_sent_at" datetime DEFAULT NULL, "remember_created_at" datetime DEFAULT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "users" ("id","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","created_at","updated_at")
+                     SELECT "id","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","created_at","updated_at" FROM "ausers"[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "ausers"[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.1ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20220216081056"]]
+  ↳ bin/rails:9
+  [1m[35m (3.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to AddRoleToUser (20220216081056)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "users" ADD "role" integer DEFAULT 0[0m
+  ↳ db/migrate/20220216081056_add_role_to_user.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220216081056"]]
+  ↳ bin/rails:9
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to RemoveRoleToUser (20220216112819)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220216112819"]]
+  ↳ bin/rails:9
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/" for ::1 at 2022-02-16 16:38:00 +0500
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/homepage.html.erb:3
+  Rendered home/homepage.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 172ms (Views: 165.2ms | ActiveRecord: 1.2ms)
+
+
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+Started DELETE "/users/sign_out" for ::1 at 2022-02-16 16:44:31 +0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"aOrQYSMrSm8ON6RCOtjadXzmdaJtq7iVC/McCuSk9ZV9YXmVO1lPItoOhnMx4/52DmeLodPD815BfYEYb1/duQ=="}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2022-02-16 16:44:31 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  Rendered home/homepage.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 19ms (Views: 18.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-02-16 16:44:32 +0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (1.1ms)
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 45ms (Views: 43.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2022-02-16 16:44:50 +0500
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GZ/HtQKDJQj2/CkFsRxrfi3FxBnVUIWj9mF+Kp+SVUV2HcDZ3niJBlPX/0j1SFjNq7ZfdM38Cn18oQDJbZOXKA==", "user"=>{"email"=>"demo@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (3.9ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "demo@example.com"], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "demo@example.com"], ["encrypted_password", "$2a$12$Y8pTcN8KVICstr4.QgyEFOGeMu6JeaIGRVXDiCZ79rUNIlhfU120."], ["created_at", "2022-02-16 11:44:50.560671"], ["updated_at", "2022-02-16 11:44:50.560671"]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (3.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 345ms (ActiveRecord: 7.4ms)
+
+
+Started GET "/" for ::1 at 2022-02-16 16:44:50 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/home/homepage.html.erb:3
+  Rendered home/homepage.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 29ms (Views: 27.4ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2022-02-16 16:45:29 +0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"0pkloIPlpiioFpCA2V9x07eRJL0ZlmhG9qrFRWBGHR7QEmhCqFt+cuKLMd0pBi9o9z9/289I9pjtHodl3StCtw=="}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2022-02-16 16:45:29 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  Rendered home/homepage.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 53ms (Views: 50.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-02-16 16:57:53 +0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (20.3ms)
+Completed 200 OK in 43ms (Views: 41.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-02-16 17:12:30 +0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (3.2ms)
+  Rendered devise/shared/_links.html.erb (3.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (24.2ms)
+Completed 200 OK in 74ms (Views: 65.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-02-16 17:12:31 +0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (4.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (21.3ms)
+Completed 200 OK in 111ms (Views: 106.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2022-02-16 17:12:39 +0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8LkeAW1JHaNSo2SRD2D8OrQnEUEn7cVFEava3iTe7JH0jRC1dWxtRtmian5fOfWBnD+BJ6ouVzT9i1MPQAShlw==", "user"=>{"email"=>"amjadali@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "amjadali@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Update (0.2ms)[0m  [1m[33mUPDATE "users" SET "remember_created_at" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["remember_created_at", "2022-02-16 12:12:40.173008"], ["updated_at", "2022-02-16 12:12:40.173643"], ["id", 2]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 327ms (ActiveRecord: 4.4ms)
+
+
+Started GET "/" for ::1 at 2022-02-16 17:12:40 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/home/homepage.html.erb:3
+  Rendered home/homepage.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 18ms (Views: 17.4ms | ActiveRecord: 0.3ms)
+
+
