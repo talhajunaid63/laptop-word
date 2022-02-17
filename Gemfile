@@ -30,6 +30,8 @@ gem 'devise'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 gem 'cancan', '~> 1.6', '>= 1.6.10'
+gem "rolify"
+gem "hirb"
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
