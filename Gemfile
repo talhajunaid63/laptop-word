@@ -27,11 +27,11 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 gem 'devise'
-gem 'actionmailer'
+#gem 'actionmailer'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
-gem 'cancan', '~> 1.6', '>= 1.6.10'
-gem "rolify"
+#gem 'cancan', '~> 1.6', '>= 1.6.10'
+#gem "rolify"
 gem "hirb"
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
