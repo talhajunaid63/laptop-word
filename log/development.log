@@ -16124,3 +16124,904 @@ Processing by Devise::SessionsController#new as HTML
 Completed 200 OK in 77ms (Views: 71.9ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/users/sign_up" for ::1 at 2022-02-22 14:32:53 +0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (1.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (198.2ms)
+Completed 500 Internal Server Error in 213ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `field' for #<ActionView::Helpers::FormBuilder:0x0000559e8c379828>
+Did you mean?  fields
+               yield):
+     5:   <%= render "devise/shared/error_messages", resource: resource %>
+     6:   <div class ="field">
+     7:     <%= f.label :First_name %>
+     8:       <%= f.field :First_name %>
+     9:   </div>
+    10: 
+    11:   <div class="field">
+  
+app/views/devise/registrations/new.html.erb:8:in `block in _app_views_devise_registrations_new_html_erb___1030039133091758974_17640'
+app/views/devise/registrations/new.html.erb:4:in `_app_views_devise_registrations_new_html_erb___1030039133091758974_17640'
+Started GET "/users/sign_up" for ::1 at 2022-02-22 14:36:07 +0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (3.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (22.5ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `First_name' for #<User:0x00007f3868021528>
+Did you mean?  first_name?
+               first_name=):
+     5:   <%= render "devise/shared/error_messages", resource: resource %>
+     6:   <div class ="field">
+     7:     <%= f.label :First_name %>
+     8:       <%= f.text_field :First_name %>
+     9:   </div>
+    10: 
+    11:   <div class="field">
+  
+app/views/devise/registrations/new.html.erb:8:in `block in _app_views_devise_registrations_new_html_erb___1030039133091758974_18340'
+app/views/devise/registrations/new.html.erb:4:in `_app_views_devise_registrations_new_html_erb___1030039133091758974_18340'
+Started GET "/users/sign_up" for ::1 at 2022-02-22 14:36:08 +0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (17.6ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `First_name' for #<User:0x00007f386c0781a8>
+Did you mean?  first_name?
+               first_name=):
+     5:   <%= render "devise/shared/error_messages", resource: resource %>
+     6:   <div class ="field">
+     7:     <%= f.label :First_name %>
+     8:       <%= f.text_field :First_name %>
+     9:   </div>
+    10: 
+    11:   <div class="field">
+  
+app/views/devise/registrations/new.html.erb:8:in `block in _app_views_devise_registrations_new_html_erb___1030039133091758974_18880'
+app/views/devise/registrations/new.html.erb:4:in `_app_views_devise_registrations_new_html_erb___1030039133091758974_18880'
+Started GET "/users/sign_up" for ::1 at 2022-02-22 14:37:09 +0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (1.0ms)
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 59ms (Views: 57.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-02-22 14:37:35 +0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (1.5ms)
+  Rendered devise/shared/_links.html.erb (1.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 52ms (Views: 47.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-02-22 14:38:41 +0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (4.5ms)
+  Rendered devise/shared/_links.html.erb (3.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (31.9ms)
+Completed 200 OK in 82ms (Views: 79.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-02-22 14:38:41 +0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (4.1ms)
+  Rendered devise/shared/_links.html.erb (8.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (39.6ms)
+Completed 200 OK in 115ms (Views: 111.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-02-22 14:39:41 +0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (1.8ms)
+  Rendered devise/shared/_links.html.erb (2.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 57ms (Views: 52.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-02-22 14:41:02 +0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (4.0ms)
+  Rendered devise/shared/_links.html.erb (5.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (49.2ms)
+Completed 200 OK in 114ms (Views: 110.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-02-22 14:41:45 +0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.5ms)
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 30ms (Views: 28.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-02-22 14:43:15 +0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (5.1ms)
+  Rendered devise/shared/_links.html.erb (6.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (51.4ms)
+Completed 200 OK in 108ms (Views: 102.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-02-22 14:44:34 +0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (19.1ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `City' for #<User:0x00007f386c15ef18>
+Did you mean?  city?
+               city=):
+    47: 
+    48: <div class ="field">
+    49:     <%= f.label :City %><br>
+    50:     <%= f.text_field :City %>
+    51:   </div>
+    52: 
+    53:   <div class="actions">
+  
+app/views/devise/registrations/new.html.erb:50:in `block in _app_views_devise_registrations_new_html_erb___1030039133091758974_20380'
+app/views/devise/registrations/new.html.erb:4:in `_app_views_devise_registrations_new_html_erb___1030039133091758974_20380'
+Started GET "/users/sign_up" for ::1 at 2022-02-22 14:44:59 +0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (17.0ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `City' for #<User:0x00007f38642654f0>
+Did you mean?  city?
+               city=):
+    47: 
+    48: <div class ="field">
+    49:     <%= f.label :city %><br>
+    50:     <%= f.text_field :City %>
+    51:   </div>
+    52: 
+    53:   <div class="actions">
+  
+app/views/devise/registrations/new.html.erb:50:in `block in _app_views_devise_registrations_new_html_erb___1030039133091758974_20920'
+app/views/devise/registrations/new.html.erb:4:in `_app_views_devise_registrations_new_html_erb___1030039133091758974_20920'
+Started GET "/users/sign_up" for ::1 at 2022-02-22 14:45:00 +0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (26.5ms)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `City' for #<User:0x00007f38709693d0>
+Did you mean?  city?
+               city=):
+    47: 
+    48: <div class ="field">
+    49:     <%= f.label :city %><br>
+    50:     <%= f.text_field :City %>
+    51:   </div>
+    52: 
+    53:   <div class="actions">
+  
+app/views/devise/registrations/new.html.erb:50:in `block in _app_views_devise_registrations_new_html_erb___1030039133091758974_21460'
+app/views/devise/registrations/new.html.erb:4:in `_app_views_devise_registrations_new_html_erb___1030039133091758974_21460'
+Started GET "/users/sign_up" for ::1 at 2022-02-22 14:45:11 +0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.8ms)
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 39ms (Views: 38.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-02-22 14:46:31 +0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (3.9ms)
+  Rendered devise/shared/_links.html.erb (3.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (44.2ms)
+Completed 200 OK in 87ms (Views: 82.0ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mUser Destroy (6.5ms)[0m  [1m[31mDELETE FROM "users"[0m
+Started POST "/users" for ::1 at 2022-02-22 14:47:53 +0500
+Processing by Users::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"u/rVyDIzU1mAvt3gARcB4AVgcD3ph8QRvCdJdZsfmPCmn8rW9Is/pma1e2EWGkaJ7SAtVLSHWwv+2QflvHib4g==", "user"=>{"first_name"=>"faheem", "last_name"=>"ismail", "user_name"=>"faheem45", "email"=>"ifaheem520@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "role"=>"Buyer", "Address"=>"nizamabad block57, dgkhan", "city"=>"dgkhan", "postal_code"=>"32200"}, "commit"=>"Sign up"}
+Unpermitted parameters: :first_name, :last_name, :user_name, :Address, :city, :postal_code
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "ifaheem520@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "ifaheem520@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "confirmation_token", "confirmation_sent_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["email", "ifaheem520@gmail.com"], ["encrypted_password", "$2a$12$yuzZJN2lfHqPoZLeBt6cIehPtIw1q01jgDcMnyh6qPMClAj.bbl36"], ["created_at", "2022-02-22 09:47:53.413808"], ["updated_at", "2022-02-22 09:47:53.413808"], ["confirmation_token", "aMSWUXc1TC7FxKJgzvn3"], ["confirmation_sent_at", "2022-02-22 09:47:53.413902"]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (3.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering devise/mailer/confirmation_instructions.html.erb
+  Rendered devise/mailer/confirmation_instructions.html.erb (0.7ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 6.0ms
+Sent mail to ifaheem520@gmail.com (4249.6ms)
+Date: Tue, 22 Feb 2022 14:47:53 +0500
+From: missshahnaz4545@gmail.com
+Reply-To: missshahnaz4545@gmail.com
+To: ifaheem520@gmail.com
+Message-ID: <6214b1496855d_3e953cdc-186@hamid-ThinkPad-T470-W10DG.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome ifaheem520@gmail.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=aMSWUXc1TC7FxKJgzvn3">Confirm my account</a></p>
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 4599ms (ActiveRecord: 4.1ms)
+
+
+Started GET "/" for ::1 at 2022-02-22 14:47:57 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  Rendered home/homepage.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 57ms (Views: 53.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-02-22 14:53:50 +0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (1.5ms)
+  Rendered devise/shared/_links.html.erb (4.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (26.3ms)
+Completed 200 OK in 67ms (Views: 64.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2022-02-22 14:55:47 +0500
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Processing by Users::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DttGDhdOOo/SRzSZOOH7whXrUluSU4RxjRWrfNLoFsoHWAOlBVV/9oPbuqqjA2xvCrfnyoPW2IhxQs3CwtiUmQ==", "user"=>{"first_name"=>"faheem", "last_name"=>"ismail", "user_name"=>"faheem45", "email"=>"ifaheem520@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "role"=>"Buyer", "Address"=>"nizamabad block57, dgkhan", "city"=>"dgkhan", "postal_code"=>"32200"}, "commit"=>"Sign up"}
+Unpermitted parameters: :password_confirmation, :role
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "ifaheem520@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "ifaheem520@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (1.1ms)
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 514ms (Views: 202.8ms | ActiveRecord: 1.0ms)
+
+
+  [1m[36mUser Destroy (3.5ms)[0m  [1m[31mDELETE FROM "users"[0m
+Started POST "/users" for ::1 at 2022-02-22 14:56:09 +0500
+Processing by Users::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"p0RIl24cySdtjp6vqvR3ZbXe+a1spHA/I88Z4GhCPp+6IVeJqKSl2IuFOC69+TAMXZ6kxDGk7yVhMVdwTyU9jQ==", "user"=>{"first_name"=>"faheem", "last_name"=>"ismail", "user_name"=>"faheem45", "email"=>"ifaheem520@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "role"=>"Buyer", "Address"=>"nizamabad block57, dgkhan", "city"=>"dgkhan", "postal_code"=>"32200"}, "commit"=>"Sign up"}
+Unpermitted parameters: :password_confirmation, :role
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "ifaheem520@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "ifaheem520@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "confirmation_token", "confirmation_sent_at", "first_name", "last_name", "user_name", "city", "Address", "postal_code") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "ifaheem520@gmail.com"], ["encrypted_password", "$2a$12$yMw/QtHiIDi0kATdL8n0KeQwyz8IDUBP.1Zpb9ymsnzTCVGlUq64G"], ["created_at", "2022-02-22 09:56:09.884231"], ["updated_at", "2022-02-22 09:56:09.884231"], ["confirmation_token", "EuAsJzszJGK8Mw4w9bm8"], ["confirmation_sent_at", "2022-02-22 09:56:09.884344"], ["first_name", "faheem"], ["last_name", "ismail"], ["user_name", "faheem45"], ["city", "dgkhan"], ["Address", "nizamabad block57, dgkhan"], ["postal_code", 32200]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering devise/mailer/confirmation_instructions.html.erb
+  Rendered devise/mailer/confirmation_instructions.html.erb (0.8ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 22.8ms
+Sent mail to ifaheem520@gmail.com (5105.7ms)
+Date: Tue, 22 Feb 2022 14:56:09 +0500
+From: support@laptopworld.com
+Reply-To: support@laptopworld.com
+To: ifaheem520@gmail.com
+Message-ID: <6214b339efae1_4d9e3db84737@hamid-ThinkPad-T470-W10DG.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome ifaheem520@gmail.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=EuAsJzszJGK8Mw4w9bm8">Confirm my account</a></p>
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 5500ms (ActiveRecord: 3.5ms)
+
+
+Started GET "/" for ::1 at 2022-02-22 14:56:15 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  Rendered home/homepage.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 27ms (Views: 25.0ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mUser Destroy (3.9ms)[0m  [1m[31mDELETE FROM "users"[0m
+Started GET "/users/sign_up" for ::1 at 2022-02-22 14:58:47 +0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Processing by Users::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.7ms)
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 213ms (Views: 187.1ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/users" for ::1 at 2022-02-22 14:59:20 +0500
+Processing by Users::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wY9ScYMaIoswZUZNiKqzuhaQDm6aGnYQSiQY0xoiAJfc6k1vRaJOdNZu4Myfp/TT/tBTB8ca6QoI2lZDPUUDhQ==", "user"=>{"first_name"=>"faheem", "last_name"=>"ismail", "user_name"=>"faheem45", "email"=>"ifaheem520@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "role"=>"Buyer", "Address"=>"nizamabad block57, dgkhan", "city"=>"dgkhan", "postal_code"=>"32200"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "ifaheem520@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "ifaheem520@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "confirmation_token", "confirmation_sent_at", "first_name", "last_name", "user_name", "city", "Address", "postal_code") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "ifaheem520@gmail.com"], ["encrypted_password", "$2a$12$fo0jSq6jlTX9dUl.ycLBuOKmouxW60HQiWcM5Tha2RiZfuLg6UzuS"], ["created_at", "2022-02-22 09:59:20.373242"], ["updated_at", "2022-02-22 09:59:20.373242"], ["confirmation_token", "mjkWbvoJtKzPVs74UkVh"], ["confirmation_sent_at", "2022-02-22 09:59:20.373361"], ["first_name", "faheem"], ["last_name", "ismail"], ["user_name", "faheem45"], ["city", "dgkhan"], ["Address", "nizamabad block57, dgkhan"], ["postal_code", 32200]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering devise/mailer/confirmation_instructions.html.erb
+  Rendered devise/mailer/confirmation_instructions.html.erb (1.0ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 22.9ms
+Sent mail to ifaheem520@gmail.com (4779.3ms)
+Date: Tue, 22 Feb 2022 14:59:20 +0500
+From: support@laptopworld.com
+Reply-To: support@laptopworld.com
+To: ifaheem520@gmail.com
+Message-ID: <6214b3f878122_4e833cdc90788@hamid-ThinkPad-T470-W10DG.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome ifaheem520@gmail.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=mjkWbvoJtKzPVs74UkVh">Confirm my account</a></p>
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 5207ms (ActiveRecord: 3.6ms)
+
+
+Started GET "/" for ::1 at 2022-02-22 14:59:25 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  Rendered home/homepage.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 63ms (Views: 57.5ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mUser Destroy (3.9ms)[0m  [1m[31mDELETE FROM "users"[0m
+Started GET "/" for ::1 at 2022-02-22 15:01:16 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  Rendered home/homepage.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 59ms (Views: 54.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-02-22 15:01:18 +0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (3.0ms)
+  Rendered devise/shared/_links.html.erb (5.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (40.7ms)
+Completed 200 OK in 99ms (Views: 93.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2022-02-22 15:01:52 +0500
+Processing by Users::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xXL9rV1KzFX1aWklsl5HSjvYUr6do9d+6nYXjZxFyE/M8bgGT1GJLKT15xYpvNDnJITnL4wmi4cWIXEzjHVKHA==", "user"=>{"first_name"=>"faheem", "last_name"=>"ismail", "user_name"=>"faheem45", "email"=>"ifaheem520@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "role"=>"Seller", "Address"=>"nizamabad block57, dgkhan", "city"=>"dgkhan", "postal_code"=>"32200"}, "commit"=>"Sign up"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "ifaheem520@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "ifaheem520@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "role", "confirmation_token", "confirmation_sent_at", "first_name", "last_name", "user_name", "city", "Address", "postal_code") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "ifaheem520@gmail.com"], ["encrypted_password", "$2a$12$wR5fFYxzxZlS/Dmx1ovCb.hp4JkIpFK0etGZWT0GRD58szToL2iAS"], ["created_at", "2022-02-22 10:01:52.868249"], ["updated_at", "2022-02-22 10:01:52.868249"], ["role", 1], ["confirmation_token", "7sgbN7Nu96sR_D5peu7Q"], ["confirmation_sent_at", "2022-02-22 10:01:52.868320"], ["first_name", "faheem"], ["last_name", "ismail"], ["user_name", "faheem45"], ["city", "dgkhan"], ["Address", "nizamabad block57, dgkhan"], ["postal_code", 32200]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (3.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering devise/mailer/confirmation_instructions.html.erb
+  Rendered devise/mailer/confirmation_instructions.html.erb (0.6ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 5.6ms
+Sent mail to ifaheem520@gmail.com (3512.5ms)
+Date: Tue, 22 Feb 2022 15:01:52 +0500
+From: support@laptopworld.com
+Reply-To: support@laptopworld.com
+To: ifaheem520@gmail.com
+Message-ID: <6214b490d7215_4e832cb09087c@hamid-ThinkPad-T470-W10DG.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome ifaheem520@gmail.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=7sgbN7Nu96sR_D5peu7Q">Confirm my account</a></p>
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 3857ms (ActiveRecord: 3.6ms)
+
+
+Started GET "/" for ::1 at 2022-02-22 15:01:56 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  Rendered home/homepage.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 43ms (Views: 38.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/confirmation?confirmation_token=7sgbN7Nu96sR_D5peu7Q" for ::1 at 2022-02-22 15:02:16 +0500
+Processing by Devise::ConfirmationsController#show as HTML
+  Parameters: {"confirmation_token"=>"7sgbN7Nu96sR_D5peu7Q"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."confirmation_token" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["confirmation_token", "7sgbN7Nu96sR_D5peu7Q"], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Update (0.3ms)[0m  [1m[33mUPDATE "users" SET "confirmed_at" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["confirmed_at", "2022-02-22 10:02:16.699565"], ["updated_at", "2022-02-22 10:02:16.700232"], ["id", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (3.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 11ms (ActiveRecord: 3.7ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-02-22 15:02:16 +0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 27ms (Views: 25.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2022-02-22 15:02:26 +0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"poNu90Qow1CuhMUQ3Ugc4xpS3hWhbRXL0OblImv0vPO75nHpgpCvr0iPY5HKRVuK8hKDfPxtitGSGKuyTJO/4Q==", "user"=>{"email"=>"ifaheem520@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "ifaheem520@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 292ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/dashboard" for ::1 at 2022-02-22 15:02:26 +0500
+Processing by HomeController#dashboard as HTML
+  Rendering home/dashboard.html.erb within layouts/application
+  Rendered home/dashboard.html.erb within layouts/application (0.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:15
+Completed 200 OK in 23ms (Views: 21.1ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2022-02-22 15:07:08 +0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"d/5EWF8TZOfwTKkdq3qbdH/EfnF+WkkXCZcSiuSQ2kFpje0nh3R7zRuj+Y0o9bhm98TOHsKpFSgTw1xAHjRyjA=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 23ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2022-02-22 15:07:08 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  Rendered home/homepage.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 24ms (Views: 22.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-02-22 15:07:10 +0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (2.1ms)
+  Rendered devise/shared/_links.html.erb (1.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (30.0ms)
+Completed 200 OK in 75ms (Views: 69.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-02-22 15:53:57 +0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (1.1ms)
+  Rendered devise/shared/_links.html.erb (1.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 37ms (Views: 35.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-02-22 15:53:59 +0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (5.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (20.2ms)
+Completed 200 OK in 81ms (Views: 76.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-02-22 15:54:00 +0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (3.0ms)
+  Rendered devise/shared/_links.html.erb (5.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (47.9ms)
+Completed 200 OK in 132ms (Views: 128.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2022-02-22 15:54:02 +0500
+Processing by Users::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DYXjr34c4zgv4iRJK14O3GoH0QQyp/agh7B0b6mzc01zYtr5DEWYRlyysSpP0BWS9GZxOpYpCoOUIjwAi4fopw==", "user"=>{"first_name"=>"", "last_name"=>"", "user_name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "role"=>"Buyer", "Address"=>"", "city"=>"", "postal_code"=>""}, "commit"=>"Sign up"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.9ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (3.1ms)
+  Rendered devise/shared/_links.html.erb (2.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (16.2ms)
+Completed 200 OK in 90ms (Views: 41.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users" for ::1 at 2022-02-22 15:55:48 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+actionpack (5.2.6.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users" for ::1 at 2022-02-22 15:55:55 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+actionpack (5.2.6.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2022-02-22 17:36:01 +0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  Rendered home/homepage.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/hamid/laptop-word/app/views/layouts/application.html.erb:9: syntax error, unexpected ')', expecting =>
+...'reload', 'rails.validations' );@output_buffer.safe_append='
+...                              ^
+/home/hamid/laptop-word/app/views/layouts/application.html.erb:27: syntax error, unexpected `ensure', expecting ')'
+          ensure
+          ^~~~~~
+/home/hamid/laptop-word/app/views/layouts/application.html.erb:29: syntax error, unexpected `end', expecting ')'
+          end
+          ^~~
+):
+  
+app/views/layouts/application.html.erb:9: syntax error, unexpected ')', expecting =>
+app/views/layouts/application.html.erb:27: syntax error, unexpected `ensure', expecting ')'
+app/views/layouts/application.html.erb:29: syntax error, unexpected `end', expecting ')'
+Started GET "/" for ::1 at 2022-02-22 17:36:29 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  Rendered home/homepage.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 376ms (Views: 371.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-02-22 17:36:31 +0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.5ms)
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (18.6ms)
+Completed 200 OK in 74ms (Views: 37.6ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/users" for ::1 at 2022-02-22 17:36:34 +0500
+Processing by Users::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"I+TwsmtLM/lAHM5HHA44dzaXQH7hRK/B6wRhGHvVZS9dA8nkGRJIhzNMWyR4gCM5qPbgQEXKU+L4lil3WeH+xQ==", "user"=>{"first_name"=>"", "last_name"=>"", "user_name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "role"=>"Buyer", "Address"=>"", "city"=>"", "postal_code"=>""}, "commit"=>"Sign up"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (1.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (2.5ms)
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 83ms (Views: 38.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/users" for ::1 at 2022-02-22 17:37:03 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+actionpack (5.2.6.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/sign_up" for ::1 at 2022-02-22 17:37:09 +0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.7ms)
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 65ms (Views: 22.9ms | ActiveRecord: 2.3ms)
+
+
+Started POST "/users" for ::1 at 2022-02-22 17:37:35 +0500
+Processing by Users::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"E6lJKPc3rFLHL7wd6jhE0uRrWf7PlEUMZHxY/yeAXFZtTnB+hW7XLLR/KX6Otl+cegr5wGsauS937hCQBbTHvA==", "user"=>{"first_name"=>"", "last_name"=>"", "user_name"=>"", "email"=>"mustafa@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "role"=>"Buyer", "Address"=>"", "city"=>"", "postal_code"=>""}, "commit"=>"Sign up"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "mustafa@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "mustafa@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "confirmation_token", "confirmation_sent_at", "first_name", "last_name", "user_name", "city", "Address") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "mustafa@gmail.com"], ["encrypted_password", "$2a$12$8r9oVnVcQ4LxtMVhNk9kbODIR2tc./NrVHfZ9a9Ndmni2V9LqQYR2"], ["created_at", "2022-02-22 12:37:35.425963"], ["updated_at", "2022-02-22 12:37:35.425963"], ["confirmation_token", "8s-T_ketKuG9m_UB6TjS"], ["confirmation_sent_at", "2022-02-22 12:37:35.426074"], ["first_name", ""], ["last_name", ""], ["user_name", ""], ["city", ""], ["Address", ""]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (3.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering devise/mailer/confirmation_instructions.html.erb
+  Rendered devise/mailer/confirmation_instructions.html.erb (0.6ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 36.7ms
+Sent mail to mustafa@gmail.com (3943.6ms)
+Date: Tue, 22 Feb 2022 17:37:35 +0500
+From: support@laptopworld.com
+Reply-To: support@laptopworld.com
+To: mustafa@gmail.com
+Message-ID: <6214d90f803d0_736457f8485e0@hamid-ThinkPad-T470-W10DG.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome mustafa@gmail.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=8s-T_ketKuG9m_UB6TjS">Confirm my account</a></p>
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 4360ms (ActiveRecord: 4.1ms)
+
+
+Started GET "/" for ::1 at 2022-02-22 17:37:39 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  Rendered home/homepage.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 61ms (Views: 57.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-02-22 17:37:42 +0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.8ms)
+  Rendered devise/shared/_links.html.erb (1.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 40ms (Views: 38.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-02-22 17:41:42 +0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.9ms)
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 46ms (Views: 44.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2022-02-22 17:41:49 +0500
+Processing by Users::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QfDbz0Y7vdaQmTEbU4LJOL4LCJjzhnhjI0UIfY6cktR+G6aVcYo7Ci6IYj9zITdZfjBOBCfGYCJgV34QFzme+g==", "user"=>{"first_name"=>"", "last_name"=>"", "user_name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "role"=>"Buyer", "Address"=>"", "city"=>"fff", "postal_code"=>""}, "commit"=>"Sign up"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.9ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (4.2ms)
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (20.7ms)
+Completed 200 OK in 101ms (Views: 58.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-02-22 17:45:32 +0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 62ms (Views: 55.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-02-22 17:45:35 +0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/new.html.erb within layouts/application (7.3ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/hamid/laptop-word/app/views/devise/registrations/new.html.erb:8: syntax error, unexpected local variable or method, expecting ')'
+...'Enter your First name' require);@output_buffer.safe_append='
+...                        ^~~~~~~
+):
+  
+app/views/devise/registrations/new.html.erb:8: syntax error, unexpected local variable or method, expecting ')'
+Started GET "/users/sign_up" for ::1 at 2022-02-22 17:45:53 +0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/new.html.erb within layouts/application (8.9ms)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/hamid/laptop-word/app/views/devise/registrations/new.html.erb:8: syntax error, unexpected ')', expecting =>
+...er your First name', required );@output_buffer.safe_append='
+...                              ^
+/home/hamid/laptop-word/app/views/devise/registrations/new.html.erb:61: syntax error, unexpected `end', expecting ')'
+'.freeze; end 
+          ^~~
+/home/hamid/laptop-word/app/views/devise/registrations/new.html.erb:66: syntax error, unexpected `ensure', expecting ')'
+          ensure
+          ^~~~~~
+/home/hamid/laptop-word/app/views/devise/registrations/new.html.erb:68: syntax error, unexpected `end', expecting ')'
+          end
+          ^~~
+):
+  
+app/views/devise/registrations/new.html.erb:8: syntax error, unexpected ')', expecting =>
+app/views/devise/registrations/new.html.erb:61: syntax error, unexpected `end', expecting ')'
+app/views/devise/registrations/new.html.erb:66: syntax error, unexpected `ensure', expecting ')'
+app/views/devise/registrations/new.html.erb:68: syntax error, unexpected `end', expecting ')'
+Started GET "/users/sign_up" for ::1 at 2022-02-22 17:46:36 +0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/new.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/hamid/laptop-word/app/views/devise/registrations/new.html.erb:8: syntax error, unexpected local variable or method, expecting ')'
+...Enter your First name' required );@output_buffer.safe_append...
+...                       ^~~~~~~~
+):
+  
+app/views/devise/registrations/new.html.erb:8: syntax error, unexpected local variable or method, expecting ')'
+Started GET "/users/sign_up" for ::1 at 2022-02-22 17:47:45 +0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.7ms)
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 41ms (Views: 39.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2022-02-22 17:50:11 +0500
+Processing by Users::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8au4JzRgXmi7E0zWA/8pkpfSeH+w02WaPo/BdN3+fdjOQMV9A9HYtAUCH/IjXNfzV+k+42STfdt9nbcZRFtx9g==", "user"=>{"first_name"=>"fff", "last_name"=>"", "user_name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "role"=>"Buyer", "Address"=>"", "city"=>"", "postal_code"=>""}, "commit"=>"Sign up"}
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (4.4ms)
+  Rendered devise/shared/_links.html.erb (1.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (20.2ms)
+Completed 200 OK in 113ms (Views: 64.5ms | ActiveRecord: 1.5ms)
+
+

@@ -32,6 +32,8 @@ gem 'devise'
 # gem 'mini_magick', '~> 4.8'
 #gem 'cancan', '~> 1.6', '>= 1.6.10'
 #gem "rolify"
+# gem 'jquery-rails'
+# gem 'client_side_validations'
 gem "hirb"
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
