@@ -34,6 +34,7 @@ gem 'devise'
 #gem "rolify"
 # gem 'jquery-rails'
 # gem 'client_side_validations'
+gem 'activeadmin'
 gem "hirb"
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

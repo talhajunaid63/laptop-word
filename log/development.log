@@ -17025,3 +17025,1646 @@ Processing by Users::RegistrationsController#create as HTML
 Completed 200 OK in 113ms (Views: 64.5ms | ActiveRecord: 1.5ms)
 
 
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to DeviseCreateAdminUsers (20220223062701)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20220223062701_devise_create_admin_users.rb:5
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "admin_users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20220223062701_devise_create_admin_users.rb:5
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admin_users_on_email" ON "admin_users" ("email")[0m
+  ↳ db/migrate/20220223062701_devise_create_admin_users.rb:39
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admin_users_on_reset_password_token" ON "admin_users" ("reset_password_token")[0m
+  ↳ db/migrate/20220223062701_devise_create_admin_users.rb:40
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220223062701"]]
+  ↳ bin/rails:9
+  [1m[35m (7.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to CreateActiveAdminComments (20220223062703)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "active_admin_comments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "namespace" varchar, "body" text, "resource_type" varchar, "resource_id" integer, "author_type" varchar, "author_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20220223062703_create_active_admin_comments.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_active_admin_comments_on_resource_type_and_resource_id" ON "active_admin_comments" ("resource_type", "resource_id")[0m
+  ↳ db/migrate/20220223062703_create_active_admin_comments.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_active_admin_comments_on_author_type_and_author_id" ON "active_admin_comments" ("author_type", "author_id")[0m
+  ↳ db/migrate/20220223062703_create_active_admin_comments.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_active_admin_comments_on_namespace" ON "active_admin_comments" ("namespace")[0m
+  ↳ db/migrate/20220223062703_create_active_admin_comments.rb:10
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220223062703"]]
+  ↳ bin/rails:9
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/" for ::1 at 2022-02-23 11:27:46 +0500
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  Rendered home/homepage.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 1329ms (Views: 1323.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/login" for ::1 at 2022-02-23 11:28:44 +0500
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Rendering /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out
+  Rendered /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/devise/shared/_links.erb (2.8ms)
+  Rendered /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (38.9ms)
+Completed 200 OK in 238ms (Views: 217.8ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/admin/login" for ::1 at 2022-02-23 11:29:10 +0500
+Processing by ActiveAdmin::Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fOTcS/gjkFPtdHd8pok5/MZW7m20eLAi+D4uKMmFp6PjZ4Ai0/ugXalcGkESXo0KtsVTb0e9kzj2UZFRU7S0MQ==", "admin_user"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[36mAdminUser Load (0.4ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."email" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["email", "admin@example.com"], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 6ms (ActiveRecord: 0.4ms)
+
+
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fOTcS/gjkFPtdHd8pok5/MZW7m20eLAi+D4uKMmFp6PjZ4Ai0/ugXalcGkESXo0KtsVTb0e9kzj2UZFRU7S0MQ==", "admin_user"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  Rendering /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out
+  Rendered /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/devise/shared/_links.erb (0.9ms)
+  Rendered /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (20.4ms)
+Completed 200 OK in 366ms (Views: 91.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/login" for ::1 at 2022-02-23 11:29:21 +0500
+Processing by ActiveAdmin::Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nW4rMiaXMenr96lgq7aJUVohUH+TXjVlSxdPl8TP1EcC7XdbDU8B56/fxF0fYT2nKrLtfWCbFn9FePDuXv7H1Q==", "admin_user"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[36mAdminUser Load (0.2ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."email" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["email", "admin@example.com"], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.2ms)
+
+
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nW4rMiaXMenr96lgq7aJUVohUH+TXjVlSxdPl8TP1EcC7XdbDU8B56/fxF0fYT2nKrLtfWCbFn9FePDuXv7H1Q==", "admin_user"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  Rendering /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out
+  Rendered /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/devise/shared/_links.erb (1.0ms)
+  Rendered /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (12.0ms)
+Completed 200 OK in 347ms (Views: 71.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/login" for ::1 at 2022-02-23 11:30:17 +0500
+Processing by ActiveAdmin::Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2OPAG9nEyXQFCInjrimSjzkklmlQru8Mg9inVuxf+/dHYJxy8hz5ekEg5N4a/iZ5Sbcra6NrzBaNtxgvdm7oZQ==", "admin_user"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[36mAdminUser Load (0.5ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."email" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["email", "admin@example.com"], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 19ms (ActiveRecord: 0.5ms)
+
+
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2OPAG9nEyXQFCInjrimSjzkklmlQru8Mg9inVuxf+/dHYJxy8hz5ekEg5N4a/iZ5Sbcra6NrzBaNtxgvdm7oZQ==", "admin_user"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  Rendering /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out
+  Rendered /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/devise/shared/_links.erb (1.3ms)
+  Rendered /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (13.3ms)
+Completed 200 OK in 368ms (Views: 75.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/login" for ::1 at 2022-02-23 11:31:44 +0500
+Processing by ActiveAdmin::Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cKBYKZiMprcxAHv/CgjNl1FQwpxLliYlPDxkZV14vnnvIwRAs1SWuXUoFsK+33lhIcN/nrhTBT8yU9scx0mt6w==", "admin_user"=>{"email"=>"ifaheem520@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[36mAdminUser Load (0.5ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."email" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["email", "ifaheem520@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 9ms (ActiveRecord: 0.5ms)
+
+
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cKBYKZiMprcxAHv/CgjNl1FQwpxLliYlPDxkZV14vnnvIwRAs1SWuXUoFsK+33lhIcN/nrhTBT8yU9scx0mt6w==", "admin_user"=>{"email"=>"ifaheem520@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  Rendering /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out
+  Rendered /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/devise/shared/_links.erb (1.6ms)
+  Rendered /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (15.6ms)
+Completed 200 OK in 389ms (Views: 71.4ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[36mAdminUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "admin_users" WHERE "admin_users"."email" = ? LIMIT ?[0m  [["email", "admin@example.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:8
+  [1m[36mAdminUser Create (0.3ms)[0m  [1m[32mINSERT INTO "admin_users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "admin@example.com"], ["encrypted_password", "$2a$12$u5qfDq4b3aK2R2QD9MWlY.s/UGVI3U/HCYjpfh1IeZGuSiI0fwl2."], ["created_at", "2022-02-23 06:35:29.976962"], ["updated_at", "2022-02-23 06:35:29.976962"]]
+  ↳ db/seeds.rb:8
+  [1m[35m (3.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:8
+Started POST "/admin/login" for ::1 at 2022-02-23 11:36:06 +0500
+Processing by ActiveAdmin::Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b7PmrKzgvbVUt0cuFIl3rKD8jzy3HsV+tl2WrlsiSBDwMLrFhziNuxCfKhOgXsNa0G8yPkTb5mS4MinXwRNbgg==", "admin_user"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[36mAdminUser Load (1.2ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."email" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["email", "admin@example.com"], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Completed 500 Internal Server Error in 345ms (ActiveRecord: 1.2ms)
+
+
+  
+NoMethodError (undefined method `Buyer?' for nil:NilClass):
+  
+app/controllers/application_controller.rb:15:in `after_sign_in_path_for'
+Started GET "/" for ::1 at 2022-02-23 11:36:42 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  Rendered home/homepage.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 90ms (Views: 88.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-02-23 11:36:46 +0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.9ms)
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 84ms (Views: 66.2ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/users" for ::1 at 2022-02-23 11:37:28 +0500
+Processing by Users::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yJTZUDKDFEJ0YHgZyZ/ssO5+phOIc/OgyGsbGE4pxBdSpHXGrEQIBJW8kBCUltSa4J0u2XhB+8MmzwTgMjRBdw==", "user"=>{"first_name"=>"faheem", "last_name"=>"ismail", "user_name"=>"faheem45", "email"=>"ifaheem520@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "role"=>"Buyer", "Address"=>"nizamabad block57, dgkhan", "city"=>"dgkhan", "postal_code"=>"32200"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "ifaheem520@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "ifaheem520@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (1.6ms)
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 405ms (Views: 84.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-02-23 11:37:50 +0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (56.7ms)
+Completed 200 OK in 144ms (Views: 140.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2022-02-23 11:37:59 +0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OQ5JFFqPurm/MY+V9Dd68dyf3I9/suES1ZdQGrS+GsQVyW00vvILxhcmyxBHJW73RUAhTlz/vvyOlihYTPQOVw==", "user"=>{"email"=>"ifaheem520@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "ifaheem520@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 335ms (ActiveRecord: 1.7ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OQ5JFFqPurm/MY+V9Dd68dyf3I9/suES1ZdQGrS+GsQVyW00vvILxhcmyxBHJW73RUAhTlz/vvyOlihYTPQOVw==", "user"=>{"email"=>"ifaheem520@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 338ms (Views: 66.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2022-02-23 11:38:09 +0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8cT+dSiEwIhoBM5ozazK9+vPTCBAFmsOxaGdoOJx/GpuR6IcA1zwhiwso1V5e34Bm1zxIrPTSBTLziLZeEDv+A==", "user"=>{"email"=>"ifaheem520@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "ifaheem520@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 336ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/dashboard" for ::1 at 2022-02-23 11:38:09 +0500
+Processing by HomeController#dashboard as HTML
+  Rendering home/dashboard.html.erb within layouts/application
+  Rendered home/dashboard.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:15
+Completed 200 OK in 72ms (Views: 70.7ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2022-02-23 11:38:11 +0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"RrGDzm4RrKPWtX3Mw+4HPDPnEkHBoSanBq2FfNIH67tfMumcWyU+DZZDObX3EeuWOQ8l0c/fNJ/bz6AtvfTnEA=="}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2022-02-23 11:38:11 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  Rendered home/homepage.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 70ms (Views: 69.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-02-23 11:38:14 +0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (2.5ms)
+  Rendered devise/shared/_links.html.erb (5.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (37.4ms)
+Completed 200 OK in 137ms (Views: 133.8ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mUser Destroy (4.4ms)[0m  [1m[31mDELETE FROM "users"[0m
+Started POST "/users" for ::1 at 2022-02-23 11:40:11 +0500
+Processing by Users::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"S31HE+8qKhdx1l0+rzs/MELYLHgb2KDA1E5VzKH+VrEd8y6X8udaoV8U1CLru1MIQraPkK399XBF0Ee+txkIkw==", "user"=>{"first_name"=>"faheem", "last_name"=>"ismail", "user_name"=>"faheem45", "email"=>"ifaheem520@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "role"=>"Buyer", "Address"=>"nizamabad block57, dgkhan", "city"=>"dgkhan", "postal_code"=>"32200"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "ifaheem520@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "ifaheem520@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "confirmation_token", "confirmation_sent_at", "first_name", "last_name", "user_name", "city", "Address", "postal_code") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "ifaheem520@gmail.com"], ["encrypted_password", "$2a$12$88MKejP3WtGPL204wSYUsO1iduvFjfzd7Ladpvq9Zcl/DX3rTuw/O"], ["created_at", "2022-02-23 06:40:12.255930"], ["updated_at", "2022-02-23 06:40:12.255930"], ["confirmation_token", "7eyFsy89e_GgGwD4PPEw"], ["confirmation_sent_at", "2022-02-23 06:40:12.256079"], ["first_name", "faheem"], ["last_name", "ismail"], ["user_name", "faheem45"], ["city", "dgkhan"], ["Address", "nizamabad block57, dgkhan"], ["postal_code", 32200]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (3.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering devise/mailer/confirmation_instructions.html.erb
+  Rendered devise/mailer/confirmation_instructions.html.erb (0.7ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 31.7ms
+Sent mail to ifaheem520@gmail.com (4264.8ms)
+Date: Wed, 23 Feb 2022 11:40:12 +0500
+From: support@laptopworld.com
+Reply-To: support@laptopworld.com
+To: ifaheem520@gmail.com
+Message-ID: <6215d6cc5a072_31d05f1485730@hamid-ThinkPad-T470-W10DG.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome ifaheem520@gmail.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=7eyFsy89e_GgGwD4PPEw">Confirm my account</a></p>
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 4721ms (ActiveRecord: 4.1ms)
+
+
+Started GET "/" for ::1 at 2022-02-23 11:40:16 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  Rendered home/homepage.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 118ms (Views: 114.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/confirmation?confirmation_token=7eyFsy89e_GgGwD4PPEw" for ::1 at 2022-02-23 11:40:38 +0500
+Processing by Devise::ConfirmationsController#show as HTML
+  Parameters: {"confirmation_token"=>"7eyFsy89e_GgGwD4PPEw"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."confirmation_token" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["confirmation_token", "7eyFsy89e_GgGwD4PPEw"], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Update (0.4ms)[0m  [1m[33mUPDATE "users" SET "confirmed_at" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["confirmed_at", "2022-02-23 06:40:38.654558"], ["updated_at", "2022-02-23 06:40:38.655515"], ["id", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (3.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 15ms (ActiveRecord: 4.8ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-02-23 11:40:38 +0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 167ms (Views: 165.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2022-02-23 11:40:48 +0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4d3E2vllL3aHfPTnP8Y3J7MCmLBvg8XXT8JZfE5atUlgpm5bix5WUI877RUj8N0ROpou+mrf88kzja0LlNOU5w==", "user"=>{"email"=>"ifaheem520@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "ifaheem520@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 329ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2022-02-23 11:40:48 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  Rendered home/homepage.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:15
+Completed 200 OK in 69ms (Views: 68.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin/login" for ::1 at 2022-02-23 11:41:14 +0500
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Rendering /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out
+  Rendered /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/devise/shared/_links.erb (1.0ms)
+  Rendered /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (19.6ms)
+Completed 200 OK in 97ms (Views: 96.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/login" for ::1 at 2022-02-23 11:41:22 +0500
+Processing by ActiveAdmin::Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9tKrb4qgz0X5o1N9LIC4UTLTqcwlx66G/G55QvfrrBr550GlOQgJ8nsnB6PR4mfHlZQayZqVoJduMW5uHmBCFg==", "admin_user"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[36mAdminUser Load (0.5ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."email" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["email", "admin@example.com"], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 344ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/admin" for ::1 at 2022-02-23 11:41:22 +0500
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.2ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/page/index.html.arb
+  Rendered /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/page/index.html.arb (59.9ms)
+Completed 200 OK in 72ms (Views: 61.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/admin_users" for ::1 at 2022-02-23 11:41:31 +0500
+Processing by Admin::AdminUsersController#index as HTML
+  [1m[36mAdminUser Load (0.5ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/resource/index.html.arb
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM "admin_users" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM "admin_users" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "admin_users"[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM "admin_users" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mAdminUser Load (0.2ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" ORDER BY "admin_users"."id" desc LIMIT ? OFFSET ?[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendered /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/resource/index.html.arb (122.9ms)
+Completed 200 OK in 144ms (Views: 130.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/admin/comments" for ::1 at 2022-02-23 11:41:34 +0500
+Processing by Admin::CommentsController#index as HTML
+  [1m[36mAdminUser Load (0.5ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/resource/index.html.arb
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "active_admin_comments" WHERE "active_admin_comments"."namespace" = ?[0m  [["namespace", "admin"]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM "active_admin_comments" WHERE "active_admin_comments"."namespace" = ? LIMIT ? OFFSET ?) subquery_for_count[0m  [["namespace", "admin"], ["LIMIT", 30], ["OFFSET", 0]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT DISTINCT "active_admin_comments"."resource_type" FROM "active_admin_comments" ORDER BY resource_type asc[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT DISTINCT "active_admin_comments"."author_type" FROM "active_admin_comments" ORDER BY author_type asc[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendered /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/resource/index.html.arb (121.6ms)
+Completed 200 OK in 156ms (Views: 132.3ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/admin/dashboard" for ::1 at 2022-02-23 11:41:36 +0500
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.5ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/page/index.html.arb
+  Rendered /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/page/index.html.arb (90.2ms)
+Completed 200 OK in 110ms (Views: 96.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admin/comments" for ::1 at 2022-02-23 11:58:17 +0500
+Processing by Admin::CommentsController#index as HTML
+  [1m[36mAdminUser Load (0.4ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/resource/index.html.arb
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "active_admin_comments" WHERE "active_admin_comments"."namespace" = ?[0m  [["namespace", "admin"]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM "active_admin_comments" WHERE "active_admin_comments"."namespace" = ? LIMIT ? OFFSET ?) subquery_for_count[0m  [["namespace", "admin"], ["LIMIT", 30], ["OFFSET", 0]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT DISTINCT "active_admin_comments"."resource_type" FROM "active_admin_comments" ORDER BY resource_type asc[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT DISTINCT "active_admin_comments"."author_type" FROM "active_admin_comments" ORDER BY author_type asc[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendered /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/resource/index.html.arb (104.2ms)
+Completed 200 OK in 119ms (Views: 106.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/admin/admin_users" for ::1 at 2022-02-23 11:58:20 +0500
+Processing by Admin::AdminUsersController#index as HTML
+  [1m[36mAdminUser Load (0.2ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/resource/index.html.arb
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM "admin_users" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM "admin_users" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "admin_users"[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM "admin_users" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mAdminUser Load (0.1ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" ORDER BY "admin_users"."id" desc LIMIT ? OFFSET ?[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendered /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/resource/index.html.arb (83.4ms)
+Completed 200 OK in 92ms (Views: 86.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admin/login" for ::1 at 2022-02-23 12:02:27 +0500
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  [1m[36mAdminUser Load (0.2ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15
+Redirected to http://localhost:3000/admin
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 7ms (ActiveRecord: 0.7ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateProducts (20220223101314)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20220223101314_create_products.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "products" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "laptop" varchar, "stock" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, CONSTRAINT "fk_rails_dee2631783"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  ↳ db/migrate/20220223101314_create_products.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_products_on_user_id" ON "products" ("user_id")[0m
+  ↳ db/migrate/20220223101314_create_products.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220223101314"]]
+  ↳ bin/rails:9
+  [1m[35m (4.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/" for ::1 at 2022-02-23 15:15:00 +0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  Rendered home/homepage.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:15
+Completed 200 OK in 222ms (Views: 217.8ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2022-02-23 15:15:28 +0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"6SgcFoldM33thEnze873U3oQQQuQwaVe3UWdvzSA/62dITXIF34J4fy6HP7naqWYJ/0tQJnqbWjRw9VsIY0YeA=="}
+  [1m[36mAdminUser Load (0.3ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 39ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/" for ::1 at 2022-02-23 15:15:28 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  Rendered home/homepage.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 572ms (Views: 571.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-02-23 15:15:31 +0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 86ms (Views: 84.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2022-02-23 15:15:42 +0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WXrPvUY5ZuK2QPb5CY39qrpO7Lpd0eN91g1HpBcKUczqFlRY5rc/814mA4EbeYbCq1eTgKS3s/J97hQGJtBfng==", "user"=>{"email"=>"ifaheem520@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "ifaheem520@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 342ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2022-02-23 15:15:42 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  Rendered home/homepage.html.erb within layouts/application (0.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:15
+Completed 200 OK in 72ms (Views: 70.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products" for ::1 at 2022-02-23 15:16:48 +0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:16
+  Rendered products/index.html.erb within layouts/application (3.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:15
+Completed 200 OK in 91ms (Views: 88.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/products/new" for ::1 at 2022-02-23 15:16:57 +0500
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (6.9ms)
+  Rendered products/new.html.erb within layouts/application (8.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:15
+Completed 200 OK in 93ms (Views: 78.1ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/products" for ::1 at 2022-02-23 15:17:09 +0500
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"D4sv2Af9j3zhbIjdsSkknlukB7yNL6hpjE7bagzUJlnI7DTsx42Jy7u+2w+aDrFTaaBQZwAx4pDWEDfNZVUylA==", "product"=>{"laptop"=>"delll", "stock"=>"1", "user_id"=>"faheem"}, "commit"=>"Create Product"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (6.0ms)
+  Rendered products/new.html.erb within layouts/application (7.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:15
+Completed 200 OK in 148ms (Views: 94.5ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/products" for ::1 at 2022-02-23 15:17:25 +0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:16
+  Rendered products/index.html.erb within layouts/application (4.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:15
+Completed 200 OK in 159ms (Views: 156.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products/new" for ::1 at 2022-02-23 15:17:39 +0500
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (5.7ms)
+  Rendered products/new.html.erb within layouts/application (7.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:15
+Completed 200 OK in 90ms (Views: 87.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/products" for ::1 at 2022-02-23 15:17:50 +0500
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HBjDQMROxYP9UhHXE/d4Ith8xpzmhKQJwd4eEDQFTTvbf9h0BD7DNKeAQgU40O3v6niRR2ua7vCbgPK3XYRZ9g==", "product"=>{"laptop"=>"delll", "stock"=>"3", "user_id"=>"ali"}, "commit"=>"Create Product"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (4.4ms)
+  Rendered products/new.html.erb within layouts/application (5.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:15
+Completed 200 OK in 97ms (Views: 87.7ms | ActiveRecord: 0.4ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateProducts (20220223101314)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE "products"[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.2ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20220223101314"]]
+  ↳ bin/rails:9
+  [1m[35m (3.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started DELETE "/users/sign_out" for ::1 at 2022-02-23 15:26:03 +0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"mI4TWfIwfiA6yYMixAaN6/G2quuk6maPsn+XKOBpAVGXu/mTQZi4l7hN1/w5ZFJ9VvEZ7hu4aJ4gIIAECeLvXQ=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 20ms (ActiveRecord: 0.9ms)
+
+
+  
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+actionpack (5.2.6.2) lib/action_controller/metal/request_forgery_protection.rb:215:in `handle_unverified_request'
+actionpack (5.2.6.2) lib/action_controller/metal/request_forgery_protection.rb:247:in `handle_unverified_request'
+devise (4.8.1) lib/devise/controllers/helpers.rb:255:in `handle_unverified_request'
+actionpack (5.2.6.2) lib/action_controller/metal/request_forgery_protection.rb:242:in `verify_authenticity_token'
+activesupport (5.2.6.2) lib/active_support/callbacks.rb:426:in `block in make_lambda'
+activesupport (5.2.6.2) lib/active_support/callbacks.rb:198:in `block (2 levels) in halting'
+actionpack (5.2.6.2) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.2.6.2) lib/active_support/callbacks.rb:199:in `block in halting'
+activesupport (5.2.6.2) lib/active_support/callbacks.rb:513:in `block in invoke_before'
+activesupport (5.2.6.2) lib/active_support/callbacks.rb:513:in `each'
+activesupport (5.2.6.2) lib/active_support/callbacks.rb:513:in `invoke_before'
+activesupport (5.2.6.2) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.2.6.2) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.6.2) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.6.2) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.6.2) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.6.2) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.6.2) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.6.2) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.6.2) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.6.2) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.6.2) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.6.2) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.6.2) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.6.2) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.6.2) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.6.2) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.6.2) lib/action_dispatch/routing/mapper.rb:18:in `block in <class:Constraints>'
+actionpack (5.2.6.2) lib/action_dispatch/routing/mapper.rb:48:in `serve'
+actionpack (5.2.6.2) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.6.2) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.6.2) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.6.2) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.6.2) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.6.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started DELETE "/users/sign_out" for ::1 at 2022-02-23 15:26:13 +0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"mI4TWfIwfiA6yYMixAaN6/G2quuk6maPsn+XKOBpAVGXu/mTQZi4l7hN1/w5ZFJ9VvEZ7hu4aJ4gIIAECeLvXQ=="}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 3ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+actionpack (5.2.6.2) lib/action_controller/metal/request_forgery_protection.rb:215:in `handle_unverified_request'
+actionpack (5.2.6.2) lib/action_controller/metal/request_forgery_protection.rb:247:in `handle_unverified_request'
+devise (4.8.1) lib/devise/controllers/helpers.rb:255:in `handle_unverified_request'
+actionpack (5.2.6.2) lib/action_controller/metal/request_forgery_protection.rb:242:in `verify_authenticity_token'
+activesupport (5.2.6.2) lib/active_support/callbacks.rb:426:in `block in make_lambda'
+activesupport (5.2.6.2) lib/active_support/callbacks.rb:198:in `block (2 levels) in halting'
+actionpack (5.2.6.2) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.2.6.2) lib/active_support/callbacks.rb:199:in `block in halting'
+activesupport (5.2.6.2) lib/active_support/callbacks.rb:513:in `block in invoke_before'
+activesupport (5.2.6.2) lib/active_support/callbacks.rb:513:in `each'
+activesupport (5.2.6.2) lib/active_support/callbacks.rb:513:in `invoke_before'
+activesupport (5.2.6.2) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.2.6.2) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.6.2) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.6.2) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.6.2) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.6.2) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.6.2) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.6.2) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.6.2) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.6.2) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.6.2) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.6.2) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.6.2) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.6.2) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.6.2) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.6.2) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.6.2) lib/action_dispatch/routing/mapper.rb:18:in `block in <class:Constraints>'
+actionpack (5.2.6.2) lib/action_dispatch/routing/mapper.rb:48:in `serve'
+actionpack (5.2.6.2) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.6.2) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.6.2) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.6.2) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.6.2) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.6.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2022-02-23 15:26:38 +0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  Rendered home/homepage.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:15
+Completed 200 OK in 666ms (Views: 660.2ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2022-02-23 15:26:40 +0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"nwFyYHfjDqXc4wrx0+8obaNQfKhUEPmi2gus8B7pvqw7gqpwyI3xcaRAxo6XauABUO0VoJKSDca4aNDBlhWM4w=="}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2022-02-23 15:26:40 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  Rendered home/homepage.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 70ms (Views: 68.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-02-23 15:26:42 +0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (1.7ms)
+  Rendered devise/shared/_links.html.erb (2.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (30.6ms)
+Completed 200 OK in 122ms (Views: 117.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-02-23 15:27:01 +0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (4.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (52.8ms)
+Completed 200 OK in 143ms (Views: 138.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2022-02-23 15:27:09 +0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"srBXPIemwIUUzK5Of2POm6TXW9V8oAAuHyhpNbTGjb+iLwGqOUBG/hYLDiRaxWGplTOoA33LbnSqVfp8lfAZBw==", "user"=>{"email"=>"ifaheem520@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "ifaheem520@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 333ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2022-02-23 15:27:10 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  Rendered home/homepage.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:15
+Completed 200 OK in 72ms (Views: 70.8ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2022-02-23 15:27:12 +0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"OzXA9bOoS8zmSYhl3URmv5BSIG91wTULuXZvZN9JN/jWwIr0thEbYI6m71KxGWiK16mI1XdEEXtwNfq1GGHJ9g=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 15ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2022-02-23 15:27:12 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  Rendered home/homepage.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 89ms (Views: 86.7ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateActiveAdminComments (20220223062703)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[35mDROP TABLE "active_admin_comments"[0m
+  ↳ db/migrate/20220223062703_create_active_admin_comments.rb:14
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.2ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20220223062703"]]
+  ↳ bin/rails:9
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to DeviseCreateAdminUsers (20220223062701)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mDROP INDEX "index_admin_users_on_reset_password_token"[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mDROP INDEX "index_admin_users_on_email"[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "admin_users"[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.1ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20220223062701"]]
+  ↳ bin/rails:9
+  [1m[35m (3.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/" for ::1 at 2022-02-23 15:57:19 +0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  Rendered home/homepage.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 329ms (Views: 321.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-02-23 15:57:22 +0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.4ms)
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (33.2ms)
+Completed 200 OK in 111ms (Views: 90.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users" for ::1 at 2022-02-23 15:57:34 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+actionpack (5.2.6.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2022-02-23 15:57:40 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  Rendered home/homepage.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 80ms (Views: 79.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-02-23 15:57:44 +0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 78ms (Views: 76.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2022-02-23 15:57:53 +0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BtUxxAF+0GFrhp0cZANmEsSmLF4Tu+moA/3r2KvZRJML/FhiOdOe6CderUW9iiXbJZROjwggVFfx9RgklohCOQ==", "user"=>{"email"=>"ifaheem520@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "ifaheem520@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 281ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2022-02-23 15:57:53 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  Rendered home/homepage.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:15
+Completed 200 OK in 69ms (Views: 68.3ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2022-02-23 15:57:55 +0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"tpRmiNdJuUoVLKBIkGwhlTzYdVIErZzlA1S9PVj9LwaiTKerEXGQQ7zwosOcL+A625gVN18I/Hw33CF917W0dw=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 23ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2022-02-23 15:57:55 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  Rendered home/homepage.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 74ms (Views: 72.7ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to DeviseCreateAdminUsers (20220224050007)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20220224050007_devise_create_admin_users.rb:5
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "admin_users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20220224050007_devise_create_admin_users.rb:5
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admin_users_on_email" ON "admin_users" ("email")[0m
+  ↳ db/migrate/20220224050007_devise_create_admin_users.rb:39
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admin_users_on_reset_password_token" ON "admin_users" ("reset_password_token")[0m
+  ↳ db/migrate/20220224050007_devise_create_admin_users.rb:40
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220224050007"]]
+  ↳ bin/rails:9
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to CreateActiveAdminComments (20220224050009)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "active_admin_comments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "namespace" varchar, "body" text, "resource_type" varchar, "resource_id" integer, "author_type" varchar, "author_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20220224050009_create_active_admin_comments.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_active_admin_comments_on_resource_type_and_resource_id" ON "active_admin_comments" ("resource_type", "resource_id")[0m
+  ↳ db/migrate/20220224050009_create_active_admin_comments.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE  INDEX "index_active_admin_comments_on_author_type_and_author_id" ON "active_admin_comments" ("author_type", "author_id")[0m
+  ↳ db/migrate/20220224050009_create_active_admin_comments.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_active_admin_comments_on_namespace" ON "active_admin_comments" ("namespace")[0m
+  ↳ db/migrate/20220224050009_create_active_admin_comments.rb:10
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220224050009"]]
+  ↳ bin/rails:9
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[36mAdminUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "admin_users" WHERE "admin_users"."email" = ? LIMIT ?[0m  [["email", "admin@example.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:8
+  [1m[36mAdminUser Create (0.3ms)[0m  [1m[32mINSERT INTO "admin_users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "admin@example.com"], ["encrypted_password", "$2a$12$LbY7XUx7n0Al0RRLtn.qtOQCNuRquwLZUbTh2p0a5CNvDwmIgQsC2"], ["created_at", "2022-02-24 05:01:36.500394"], ["updated_at", "2022-02-24 05:01:36.500394"]]
+  ↳ db/seeds.rb:8
+  [1m[35m (3.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:8
+Started GET "/admin/login" for ::1 at 2022-02-24 10:02:09 +0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Rendering /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out
+  Rendered /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/devise/shared/_links.erb (2.6ms)
+  Rendered /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (23.4ms)
+Completed 200 OK in 480ms (Views: 462.7ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/admin/login" for ::1 at 2022-02-24 10:02:17 +0500
+Processing by ActiveAdmin::Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lYruqBWMgsEGvE4RglnYP8/F5ux0HW1euSC5Uuin8O2PQ+q78WBlKaURelHRhD4ser771JVx2sNdcTcLPJKPVQ==", "admin_user"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[36mAdminUser Load (1.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."email" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["email", "admin@example.com"], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Completed 500 Internal Server Error in 330ms (ActiveRecord: 1.0ms)
+
+
+  
+NoMethodError (undefined method `Buyer?' for nil:NilClass):
+  
+app/controllers/application_controller.rb:15:in `after_sign_in_path_for'
+Started GET "/users/sign_up" for ::1 at 2022-02-24 10:02:31 +0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.6ms)
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 114ms (Views: 94.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-02-24 10:02:36 +0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (9.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (33.0ms)
+Completed 200 OK in 142ms (Views: 137.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2022-02-24 10:02:44 +0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"G0nUKim0i5rN7tSVLuEgej5hv8OJUiMQmvtcegMj4i90rG9XI3gIZosgaF/cycsrnUXlld5XEAEYd5Le8FijQw==", "user"=>{"email"=>"ifaheem520@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "ifaheem520@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 329ms (ActiveRecord: 1.0ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"G0nUKim0i5rN7tSVLuEgej5hv8OJUiMQmvtcegMj4i90rG9XI3gIZosgaF/cycsrnUXlld5XEAEYd5Le8FijQw==", "user"=>{"email"=>"ifaheem520@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 345ms (Views: 72.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-02-24 10:02:48 +0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (7.1ms)
+  Rendered devise/shared/_links.html.erb (3.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (47.5ms)
+Completed 200 OK in 151ms (Views: 148.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2022-02-24 10:03:20 +0500
+Processing by Users::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9AnQ6T15JwMDIcZazibQvVxFj2TRAO2lVOK7IgHnJxIOwlp0YYvssLw1HPLrkotuEBUSrJwQJn2yljaxjG5Slg==", "user"=>{"first_name"=>"faheem", "last_name"=>"ismail", "user_name"=>"faheem45", "email"=>"ifaheem520@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "role"=>"Buyer", "Address"=>"nizamabad block57, dgkhan", "city"=>"dgkhan", "postal_code"=>"32200"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "ifaheem520@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "ifaheem520@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (1.0ms)
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 402ms (Views: 79.7ms | ActiveRecord: 0.5ms)
+
+
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/admin/login" for ::1 at 2022-02-24 10:04:13 +0500
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Rendering /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out
+  Rendered /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/devise/shared/_links.erb (1.9ms)
+  Rendered /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (23.5ms)
+Completed 200 OK in 101ms (Views: 99.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/login" for ::1 at 2022-02-24 10:04:20 +0500
+Processing by ActiveAdmin::Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wb7LTaEYzr/nWdAEyp5ZNpD6kLDLpU/nCUFFi7iHwvXbd89eRfQpV0T05ESZQ78lJYGNiCrJ+HrtEMvSbLK9TQ==", "admin_user"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[36mAdminUser Load (0.4ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."email" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["email", "admin@example.com"], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Completed 500 Internal Server Error in 346ms (ActiveRecord: 0.4ms)
+
+
+  
+NoMethodError (undefined method `Buyer?' for nil:NilClass):
+  
+app/controllers/application_controller.rb:15:in `after_sign_in_path_for'
+  [1m[36mUser Destroy (6.7ms)[0m  [1m[31mDELETE FROM "users"[0m
+Started GET "/users/sign_up" for ::1 at 2022-02-24 10:04:58 +0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.6ms)
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 100ms (Views: 98.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2022-02-24 10:05:37 +0500
+Processing by Users::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"x8PMrVm45d0l1K2f0RfXFXGgcxLxkEqLnAueqmC6YtDdCsi+vVQCNYZ5md+CyjEGxNtuKhD8/RZ4WhDztI8daA==", "user"=>{"first_name"=>"faheem", "last_name"=>"ismail", "user_name"=>"faheem45", "email"=>"ifaheem520@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "role"=>"Buyer", "Address"=>"nizamabad block57, dgkhan", "city"=>"dgkhan", "postal_code"=>"32200"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "ifaheem520@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "ifaheem520@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "confirmation_token", "confirmation_sent_at", "first_name", "last_name", "user_name", "city", "Address", "postal_code") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "ifaheem520@gmail.com"], ["encrypted_password", "$2a$12$.J5aWWote85xoDwAPU4I1uklJ9vNIpPBrNfHcmxpOdDGvcAM.0vee"], ["created_at", "2022-02-24 05:05:38.060208"], ["updated_at", "2022-02-24 05:05:38.060208"], ["confirmation_token", "xsLGF8qGgsNRc-N9fLGz"], ["confirmation_sent_at", "2022-02-24 05:05:38.060332"], ["first_name", "faheem"], ["last_name", "ismail"], ["user_name", "faheem45"], ["city", "dgkhan"], ["Address", "nizamabad block57, dgkhan"], ["postal_code", 32200]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering devise/mailer/confirmation_instructions.html.erb
+  Rendered devise/mailer/confirmation_instructions.html.erb (0.7ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 30.7ms
+Sent mail to ifaheem520@gmail.com (4290.8ms)
+Date: Thu, 24 Feb 2022 10:05:38 +0500
+From: support@laptopworld.com
+Reply-To: support@laptopworld.com
+To: ifaheem520@gmail.com
+Message-ID: <621712222805a_1a4f5b90805c4@hamid-ThinkPad-T470-W10DG.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome ifaheem520@gmail.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=xsLGF8qGgsNRc-N9fLGz">Confirm my account</a></p>
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 4744ms (ActiveRecord: 3.4ms)
+
+
+Started GET "/" for ::1 at 2022-02-24 10:05:42 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  Rendered home/homepage.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 149ms (Views: 142.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/confirmation?confirmation_token=xsLGF8qGgsNRc-N9fLGz" for ::1 at 2022-02-24 10:05:56 +0500
+Processing by Devise::ConfirmationsController#show as HTML
+  Parameters: {"confirmation_token"=>"xsLGF8qGgsNRc-N9fLGz"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."confirmation_token" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["confirmation_token", "xsLGF8qGgsNRc-N9fLGz"], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Update (0.3ms)[0m  [1m[33mUPDATE "users" SET "confirmed_at" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["confirmed_at", "2022-02-24 05:05:56.343199"], ["updated_at", "2022-02-24 05:05:56.343945"], ["id", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (3.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 11ms (ActiveRecord: 3.7ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-02-24 10:05:56 +0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 100ms (Views: 98.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2022-02-24 10:06:05 +0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9X02HBngpRxi4p5MjY7Taoac0Ouw2nV2UvAKSY+VkSjvtDIP/QxC9MFPqgzeUzV5M+fN01G2wuu2oYQQW6DukA==", "user"=>{"email"=>"ifaheem520@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "ifaheem520@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 340ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2022-02-24 10:06:06 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  Rendered home/homepage.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:15
+Completed 200 OK in 78ms (Views: 76.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/login" for ::1 at 2022-02-24 10:06:12 +0500
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Rendering /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out
+  Rendered /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/devise/shared/_links.erb (1.2ms)
+  Rendered /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (20.5ms)
+Completed 200 OK in 83ms (Views: 81.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/login" for ::1 at 2022-02-24 10:06:19 +0500
+Processing by ActiveAdmin::Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"h79GnjlvO/yuRRc5FeIzJbUHkwdYCVuWS2TsumjIVnLUhlo6plV5H10zAbSLk8/j/AKMK6tl3pyG6rLWFV1XuA==", "admin_user"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[36mAdminUser Load (0.5ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."email" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["email", "admin@example.com"], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 334ms (ActiveRecord: 0.5ms)
+
+
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"h79GnjlvO/yuRRc5FeIzJbUHkwdYCVuWS2TsumjIVnLUhlo6plV5H10zAbSLk8/j/AKMK6tl3pyG6rLWFV1XuA==", "admin_user"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  Rendering /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out
+  Rendered /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/devise/shared/_links.erb (2.2ms)
+  Rendered /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (15.5ms)
+Completed 200 OK in 345ms (Views: 76.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/login" for ::1 at 2022-02-24 10:07:11 +0500
+Processing by ActiveAdmin::Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xv/2z55zlU9E9gq/ptcKvylT9R3jKGVgYiLaDAsi6dGVxuprAUnXrLeAHDI4pvZ5YFbqMRBE4GqvrIRgdrfoGw==", "admin_user"=>{"email"=>"faheemismail4545@yahoo.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[36mAdminUser Load (0.5ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."email" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["email", "faheemismail4545@yahoo.com"], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 10ms (ActiveRecord: 0.5ms)
+
+
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xv/2z55zlU9E9gq/ptcKvylT9R3jKGVgYiLaDAsi6dGVxuprAUnXrLeAHDI4pvZ5YFbqMRBE4GqvrIRgdrfoGw==", "admin_user"=>{"email"=>"faheemismail4545@yahoo.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  Rendering /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out
+  Rendered /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/devise/shared/_links.erb (0.8ms)
+  Rendered /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (10.3ms)
+Completed 200 OK in 377ms (Views: 66.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/login" for ::1 at 2022-02-24 10:07:25 +0500
+Processing by ActiveAdmin::Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dHMcQeCgO23lOeUxNfLvcelgM4KB3MZwzzAFKHkK0rYnSgDlf5p5jhZP87yrgxO3oGUsrnKwQ3oCvltEBJ/TfA==", "admin_user"=>{"email"=>"faheemismail4545@yahoo.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[36mAdminUser Load (0.9ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."email" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["email", "faheemismail4545@yahoo.com"], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 12ms (ActiveRecord: 0.9ms)
+
+
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dHMcQeCgO23lOeUxNfLvcelgM4KB3MZwzzAFKHkK0rYnSgDlf5p5jhZP87yrgxO3oGUsrnKwQ3oCvltEBJ/TfA==", "admin_user"=>{"email"=>"faheemismail4545@yahoo.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  Rendering /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out
+  Rendered /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/devise/shared/_links.erb (0.8ms)
+  Rendered /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (10.0ms)
+Completed 200 OK in 392ms (Views: 73.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/login" for ::1 at 2022-02-24 10:07:41 +0500
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Processing by ActiveAdmin::Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KTmRkbFGSrm60iNAvTSKlezuKho47+Fhy/etb+MFrw96AI01LnwIWkmkNc0jRXZTpes1NsuDZGsGefMDnpCuxQ==", "admin_user"=>{"email"=>"faheemismail4545@yahoo.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[36mAdminUser Load (0.4ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."email" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["email", "faheemismail4545@yahoo.com"], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 17ms (ActiveRecord: 1.5ms)
+
+
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KTmRkbFGSrm60iNAvTSKlezuKho47+Fhy/etb+MFrw96AI01LnwIWkmkNc0jRXZTpes1NsuDZGsGefMDnpCuxQ==", "admin_user"=>{"email"=>"faheemismail4545@yahoo.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  Rendering /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out
+  Rendered /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/devise/shared/_links.erb (1.5ms)
+  Rendered /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (17.9ms)
+Completed 200 OK in 586ms (Views: 305.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/login" for ::1 at 2022-02-24 10:09:04 +0500
+Processing by ActiveAdmin::Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KTmRkbFGSrm60iNAvTSKlezuKho47+Fhy/etb+MFrw96AI01LnwIWkmkNc0jRXZTpes1NsuDZGsGefMDnpCuxQ==", "admin_user"=>{"email"=>"faheemismail4545@yahoo.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[36mAdminUser Load (0.6ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."email" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["email", "faheemismail4545@yahoo.com"], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 17ms (ActiveRecord: 0.6ms)
+
+
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KTmRkbFGSrm60iNAvTSKlezuKho47+Fhy/etb+MFrw96AI01LnwIWkmkNc0jRXZTpes1NsuDZGsGefMDnpCuxQ==", "admin_user"=>{"email"=>"faheemismail4545@yahoo.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  Rendering /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out
+  Rendered /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/devise/shared/_links.erb (1.0ms)
+  Rendered /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (13.0ms)
+Completed 200 OK in 387ms (Views: 77.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/login" for ::1 at 2022-02-24 10:09:14 +0500
+Processing by ActiveAdmin::Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KTmRkbFGSrm60iNAvTSKlezuKho47+Fhy/etb+MFrw96AI01LnwIWkmkNc0jRXZTpes1NsuDZGsGefMDnpCuxQ==", "admin_user"=>{"email"=>"faheemismail4545@yahoo.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[36mAdminUser Load (0.5ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."email" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["email", "faheemismail4545@yahoo.com"], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 8ms (ActiveRecord: 0.5ms)
+
+
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KTmRkbFGSrm60iNAvTSKlezuKho47+Fhy/etb+MFrw96AI01LnwIWkmkNc0jRXZTpes1NsuDZGsGefMDnpCuxQ==", "admin_user"=>{"email"=>"faheemismail4545@yahoo.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  Rendering /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out
+  Rendered /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/devise/shared/_links.erb (1.2ms)
+  Rendered /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (12.5ms)
+Completed 200 OK in 379ms (Views: 71.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-02-24 10:09:24 +0500
+Processing by HomeController#homepage as HTML
+  Rendering home/homepage.html.erb within layouts/application
+  Rendered home/homepage.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:15
+Completed 200 OK in 121ms (Views: 118.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/admin/login" for ::1 at 2022-02-24 10:09:30 +0500
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Rendering /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out
+  Rendered /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/devise/shared/_links.erb (1.2ms)
+  Rendered /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (19.9ms)
+Completed 200 OK in 86ms (Views: 85.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/login" for ::1 at 2022-02-24 10:09:39 +0500
+Processing by ActiveAdmin::Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iA7pZMXv263kVBNh2bQ7R5AR+tug3mUFrdi6wUqoRS3bN/XAWtWZThciBexHxceB2RTl91Oy4A9gVuStNz1E5w==", "admin_user"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[36mAdminUser Load (0.6ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."email" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["email", "admin@example.com"], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 327ms (ActiveRecord: 0.6ms)
+
+
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iA7pZMXv263kVBNh2bQ7R5AR+tug3mUFrdi6wUqoRS3bN/XAWtWZThciBexHxceB2RTl91Oy4A9gVuStNz1E5w==", "admin_user"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  Rendering /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out
+  Rendered /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/devise/shared/_links.erb (0.7ms)
+  Rendered /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (9.9ms)
+Completed 200 OK in 340ms (Views: 69.3ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[36mAdminUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "admin_users" WHERE "admin_users"."email" = ? LIMIT ?[0m  [["email", "admin@example.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[36mAdminUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "admin_users" WHERE "admin_users"."email" = ? LIMIT ?[0m  [["email", "admin@example.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/hamid/.rbenv/versions/2.7.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[36mAdminUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "admin_users" WHERE "admin_users"."email" = ? LIMIT ?[0m  [["email", "admin@example.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[36mAdminUser Load (1.4ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAdminUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "admin_users" WHERE "admin_users"."email" = ? LIMIT ?[0m  [["email", "admin2@example.com"], ["LIMIT", 1]]
+  [1m[36mAdminUser Create (0.3ms)[0m  [1m[32mINSERT INTO "admin_users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "admin2@example.com"], ["encrypted_password", "$2a$12$NSZmzoLLBMoXKQm/MpjvTOT3g1cb61vvcqOiuLI96sF/5YLg6hrYe"], ["created_at", "2022-02-24 05:21:39.791828"], ["updated_at", "2022-02-24 05:21:39.791828"]]
+  [1m[35m (3.7ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/admin/login" for ::1 at 2022-02-24 10:22:10 +0500
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Rendering /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out
+  Rendered /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/devise/shared/_links.erb (1.5ms)
+  Rendered /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (18.2ms)
+Completed 200 OK in 93ms (Views: 92.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/login" for ::1 at 2022-02-24 10:22:24 +0500
+Processing by ActiveAdmin::Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kukmwAaPhrpiYqiWK6C56Gk0V6JNhVC/72sJlIay85/B0DpkmbXEWZEUvhu10UUuIDFIjr7p1bUi5Vf4+yfyVQ==", "admin_user"=>{"email"=>"admin2@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[36mAdminUser Load (0.3ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."email" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["email", "admin2@example.com"], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 282ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/admin" for ::1 at 2022-02-24 10:22:25 +0500
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.2ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/page/index.html.arb
+  Rendered /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/page/index.html.arb (64.7ms)
+Completed 200 OK in 69ms (Views: 66.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/admin_users" for ::1 at 2022-02-24 10:27:42 +0500
+Processing by Admin::AdminUsersController#index as HTML
+  [1m[36mAdminUser Load (0.8ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/resource/index.html.arb
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM "admin_users" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM "admin_users" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "admin_users"[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM "admin_users" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mAdminUser Load (0.2ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" ORDER BY "admin_users"."id" desc LIMIT ? OFFSET ?[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendered /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/resource/index.html.arb (116.1ms)
+Completed 200 OK in 165ms (Views: 119.8ms | ActiveRecord: 1.4ms)
+
+
+Started DELETE "/admin/admin_users/1" for ::1 at 2022-02-24 10:27:54 +0500
+Processing by Admin::AdminUsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"9PtMvVwSLIrDaSWB1+uTvF5cjl3Nc08CX9qVmGHGLGJziFWw/0kaDj4SUzw3gAhQX4QDqDnjbUvguP/HilEzZg==", "id"=>"1"}
+  [1m[36mAdminUser Load (0.2ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mAdminUser Load (0.3ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mAdminUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "admin_users" WHERE "admin_users"."id" = ?[0m  [["id", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/admin/admin_users
+Completed 302 Found in 18ms (ActiveRecord: 3.8ms)
+
+
+Started GET "/admin/admin_users" for ::1 at 2022-02-24 10:27:54 +0500
+Processing by Admin::AdminUsersController#index as HTML
+  [1m[36mAdminUser Load (0.2ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/resource/index.html.arb
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM "admin_users" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM "admin_users" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "admin_users"[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM "admin_users" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mAdminUser Load (0.2ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" ORDER BY "admin_users"."id" desc LIMIT ? OFFSET ?[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendered /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/resource/index.html.arb (88.7ms)
+Completed 200 OK in 95ms (Views: 90.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admin/dashboard" for ::1 at 2022-02-24 10:27:57 +0500
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.2ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/page/index.html.arb
+  Rendered /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/page/index.html.arb (61.7ms)
+Completed 200 OK in 66ms (Views: 63.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/comments" for ::1 at 2022-02-24 10:28:00 +0500
+Processing by Admin::CommentsController#index as HTML
+  [1m[36mAdminUser Load (0.2ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/resource/index.html.arb
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "active_admin_comments" WHERE "active_admin_comments"."namespace" = ?[0m  [["namespace", "admin"]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM "active_admin_comments" WHERE "active_admin_comments"."namespace" = ? LIMIT ? OFFSET ?) subquery_for_count[0m  [["namespace", "admin"], ["LIMIT", 30], ["OFFSET", 0]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT DISTINCT "active_admin_comments"."resource_type" FROM "active_admin_comments" ORDER BY resource_type asc[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT DISTINCT "active_admin_comments"."author_type" FROM "active_admin_comments" ORDER BY author_type asc[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendered /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/resource/index.html.arb (89.5ms)
+Completed 200 OK in 101ms (Views: 92.0ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/admin/dashboard" for ::1 at 2022-02-24 10:28:02 +0500
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.6ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/page/index.html.arb
+  Rendered /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/page/index.html.arb (135.9ms)
+Completed 200 OK in 152ms (Views: 142.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admin/admin_users" for ::1 at 2022-02-24 10:28:06 +0500
+Processing by Admin::AdminUsersController#index as HTML
+  [1m[36mAdminUser Load (0.5ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/resource/index.html.arb
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM "admin_users" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM "admin_users" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "admin_users"[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM "admin_users" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mAdminUser Load (0.2ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" ORDER BY "admin_users"."id" desc LIMIT ? OFFSET ?[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendered /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/resource/index.html.arb (106.8ms)
+Completed 200 OK in 127ms (Views: 115.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/admin/admin_users/2" for ::1 at 2022-02-24 10:28:11 +0500
+Processing by Admin::AdminUsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAdminUser Load (4.7ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mAdminUser Load (0.4ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/resource/show.html.arb
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = ? AND "active_admin_comments"."resource_id" = ? AND "active_admin_comments"."namespace" = ?[0m  [["resource_type", "AdminUser"], ["resource_id", 2], ["namespace", "admin"]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveAdmin::Comment Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = ? AND "active_admin_comments"."resource_id" = ? AND "active_admin_comments"."namespace" = ? LIMIT ? OFFSET ?[0m  [["resource_type", "AdminUser"], ["resource_id", 2], ["namespace", "admin"], ["LIMIT", 1], ["OFFSET", 0]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendered /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/resource/show.html.arb (131.7ms)
+Completed 200 OK in 163ms (Views: 146.3ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/admin/comments" for ::1 at 2022-02-24 10:28:20 +0500
+Processing by Admin::CommentsController#index as HTML
+  [1m[36mAdminUser Load (0.6ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/resource/index.html.arb
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "active_admin_comments" WHERE "active_admin_comments"."namespace" = ?[0m  [["namespace", "admin"]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM "active_admin_comments" WHERE "active_admin_comments"."namespace" = ? LIMIT ? OFFSET ?) subquery_for_count[0m  [["namespace", "admin"], ["LIMIT", 30], ["OFFSET", 0]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT DISTINCT "active_admin_comments"."resource_type" FROM "active_admin_comments" ORDER BY resource_type asc[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT DISTINCT "active_admin_comments"."author_type" FROM "active_admin_comments" ORDER BY author_type asc[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendered /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/resource/index.html.arb (149.8ms)
+Completed 200 OK in 172ms (Views: 159.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/admin/dashboard" for ::1 at 2022-02-24 10:28:21 +0500
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.5ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/page/index.html.arb
+  Rendered /home/hamid/.rvm/gems/ruby-2.7.3/gems/activeadmin-2.9.0/app/views/active_admin/page/index.html.arb (121.0ms)
+Completed 200 OK in 137ms (Views: 128.9ms | ActiveRecord: 0.5ms)
+
+
