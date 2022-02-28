@@ -27,9 +27,10 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 gem 'devise'
+gem 'activesupport', '~> 5.2', '>= 5.2.6'
 #gem 'actionmailer'
 # Use ActiveStorage variant
-# gem 'mini_magick', '~> 4.8'
+gem 'mini_magick', '~> 4.8'
 #gem 'cancan', '~> 1.6', '>= 1.6.10'
 #gem "rolify"
 # gem 'jquery-rails'
