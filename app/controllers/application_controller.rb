@@ -1,6 +1,7 @@
 class ApplicationController < ActionController::Base
+  before_action :authenticate_user!
 	before_action :configure_permitted_parameters, if: :devise_controller?
-
+   
   private
 
   def configure_permitted_parameters
@@ -15,9 +16,7 @@ def after_sign_in_path_for(resource)
 if current_user.Buyer?
    root_path
 else
-dashboard_path
-end  
+  dashboard_path
+ end 
   end
 end
-
-
