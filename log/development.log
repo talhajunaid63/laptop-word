@@ -38433,3 +38433,2165 @@ Processing by ProductsController#index as HTML
 Completed 200 OK in 78ms (Views: 76.0ms | ActiveRecord: 0.2ms)
 
 
+Started GET "/" for ::1 at 2022-03-15 09:16:06 +0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Processing by ProductsController#index as HTML
+Completed 401 Unauthorized in 6ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-03-15 09:16:06 +0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 376ms (Views: 354.9ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2022-03-15 09:18:53 +0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZZ6fOkLPfnAmb8bifu7H7ZTTVs+0ftvvVXZjKIINK9rylGWtpsCnhW4GpMdSsbjauveS0UvTr2eR5UX5z14kaQ==", "user"=>{"email"=>"ifaheem520@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "ifaheem520@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 291ms (ActiveRecord: 1.3ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZZ6fOkLPfnAmb8bifu7H7ZTTVs+0ftvvVXZjKIINK9rylGWtpsCnhW4GpMdSsbjauveS0UvTr2eR5UX5z14kaQ==", "user"=>{"email"=>"ifaheem520@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 334ms (Views: 63.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2022-03-15 09:19:00 +0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cBbAUqcOI0OUYGQlwTTEAaH/0SnxntfQbq+F0wZxSYznHDrFQwH6ttwJBgDta7s2j9sVNw4zo1iqPKMCSyJGPw==", "user"=>{"email"=>"ifaheem520@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "ifaheem520@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 324ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/dashboard" for ::1 at 2022-03-15 09:19:00 +0500
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering home/dashboard.html.erb within layouts/application
+  Rendered home/dashboard.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 71ms (Views: 69.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products" for ::1 at 2022-03-15 09:26:11 +0500
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Started GET "/products" for ::1 at 2022-03-15 09:28:19 +0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mProduct Load (1.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  ↳ app/views/products/index.html.erb:16
+  Rendered products/index.html.erb within layouts/application (55.0ms)
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:16
+  Rendered products/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 342ms (Views: 319.1ms | ActiveRecord: 6.0ms)
+
+
+Completed 200 OK in 291ms (Views: 268.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/products/new" for ::1 at 2022-03-15 09:29:01 +0500
+Processing by ProductsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (19.8ms)
+  Rendered products/new.html.erb within layouts/application (21.7ms)
+Completed 200 OK in 93ms (Views: 89.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/new" for ::1 at 2022-03-15 09:29:22 +0500
+Processing by ProductsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (5.8ms)
+  Rendered products/new.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 110ms (Views: 97.2ms | ActiveRecord: 0.5ms)
+
+
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to AddUserRefToProducts (20220315044643)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to AddUserRefToProducts (20220315044643)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "products" ADD "user_id" integer[0m
+  ↳ db/migrate/20220315044643_add_user_ref_to_products.rb:3
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20220315044643_add_user_ref_to_products.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_products_on_user_id" ON "products" ("user_id")[0m
+  ↳ db/migrate/20220315044643_add_user_ref_to_products.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220315044643"]]
+  ↳ bin/rails:9
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+Started DELETE "/users/sign_out" for ::1 at 2022-03-15 09:56:27 +0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"P/LYKFBwjpBGbJVJmLW3yQCdGymS0/Q0ZrYGyO8AWN/hdPTHel3QpddinOyNLb0bJF+/N5vmO6aFmnsBa2ygNA=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 25ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2022-03-15 09:56:27 +0500
+Processing by ProductsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-03-15 09:56:27 +0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 77ms (Views: 76.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for ::1 at 2022-03-15 09:56:34 +0500
+Processing by ProductsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-03-15 09:56:34 +0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 99ms (Views: 97.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2022-03-15 09:57:13 +0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3eSVmCg/Yb58TBYqvpt7fTnxfP3+lwEsRAasnwDnMwnUHVLI57JKfdUyd9LTGtUFGi6Zc5DZMLMKvkVDcTP69g==", "user"=>{"email"=>"tahir45@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "tahir45@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 323ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/" for ::1 at 2022-03-15 09:57:14 +0500
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:16
+  Rendered products/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 93ms (Views: 91.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/products/new" for ::1 at 2022-03-15 09:57:25 +0500
+Processing by ProductsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (7.3ms)
+  Rendered products/new.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 98ms (Views: 94.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/new" for ::1 at 2022-03-15 11:04:41 +0500
+Processing by ProductsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (11.5ms)
+  Rendered products/new.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 127ms (Views: 94.6ms | ActiveRecord: 2.0ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2022-03-15 11:04:43 +0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"VLFUsfg3NRiAVpix6eHW3AIRdpSgE0Zq8ZQHo4ucwRh1eArBDg04ORdpKhkb1K/AVDT/aYXw04vVqHcB6vp0uQ=="}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2022-03-15 11:04:43 +0500
+Processing by ProductsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-03-15 11:04:43 +0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 80ms (Views: 78.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2022-03-15 11:05:04 +0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HH4EU5JRCs39MZz7ihVsDbcnd9ze8fTraBOdxVtyxRwpeJDtrMR24DN49YNNr3csiyrgwz6SbGgRrbv9NstRYQ==", "user"=>{"email"=>"ifaheem520@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "ifaheem520@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 341ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/dashboard" for ::1 at 2022-03-15 11:05:04 +0500
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering home/dashboard.html.erb within layouts/application
+  Rendered home/dashboard.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 81ms (Views: 78.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products" for ::1 at 2022-03-15 11:05:08 +0500
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.2ms)
+
+
+  
+NameError (uninitialized constant ProductsController::Products):
+  
+app/controllers/products_controller.rb:3:in `index'
+Started GET "/products" for ::1 at 2022-03-15 11:05:43 +0500
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:16
+  Rendered products/index.html.erb within layouts/application (10.2ms)
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 2.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    15:   <tbody>
+    16:     <% @products.each do |product| %>
+    17:       <tr>
+    18:         <td><%= @product.title %></td>
+    19:         <td><%= @product.description %></td>
+    20:         <td><%= @product.price %></td>
+    21:           <% if current_user.Buyer? %>
+  
+app/views/products/index.html.erb:18:in `block in _app_views_products_index_html_erb__3553714546673159129_59920'
+app/views/products/index.html.erb:16:in `_app_views_products_index_html_erb__3553714546673159129_59920'
+Started GET "/products" for ::1 at 2022-03-15 11:06:05 +0500
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:16
+  Rendered products/index.html.erb within layouts/application (7.6ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for #<Product::ActiveRecord_Relation:0x00007f1c4c00ab08>):
+    15:   <tbody>
+    16:     <% @products.each do |product| %>
+    17:       <tr>
+    18:         <td><%= @products.title %></td>
+    19:         <td><%= @products.description %></td>
+    20:         <td><%= @products.price %></td>
+    21:           <% if current_user.Buyer? %>
+  
+app/views/products/index.html.erb:18:in `block in _app_views_products_index_html_erb__3553714546673159129_60440'
+app/views/products/index.html.erb:16:in `_app_views_products_index_html_erb__3553714546673159129_60440'
+Started GET "/products" for ::1 at 2022-03-15 11:07:55 +0500
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:16
+  Rendered products/index.html.erb within layouts/application (4.8ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    15:   <tbody>
+    16:     <% @products.each do |product| %>
+    17:       <tr>
+    18:         <td><%= @product.title %></td>
+    19:         <td><%= @products.description %></td>
+    20:         <td><%= @products.price %></td>
+    21:           <% if current_user.Buyer? %>
+  
+app/views/products/index.html.erb:18:in `block in _app_views_products_index_html_erb__3553714546673159129_60980'
+app/views/products/index.html.erb:16:in `_app_views_products_index_html_erb__3553714546673159129_60980'
+Started GET "/products" for ::1 at 2022-03-15 11:09:01 +0500
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:16
+  Rendered products/index.html.erb within layouts/application (24.4ms)
+Completed 500 Internal Server Error in 52ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for #<Product::ActiveRecord_Relation:0x00007f1c4401e868>):
+    15:   <tbody>
+    16:     <% @products.each do |product| %>
+    17:       <tr>
+    18:         <td><%= @products.title %></td>
+    19:         <td><%= @products.description %></td>
+    20:         <td><%= @products.price %></td>
+    21:           <% if current_user.Buyer? %>
+  
+app/views/products/index.html.erb:18:in `block in _app_views_products_index_html_erb__3553714546673159129_61500'
+app/views/products/index.html.erb:16:in `_app_views_products_index_html_erb__3553714546673159129_61500'
+Started GET "/products" for ::1 at 2022-03-15 11:09:39 +0500
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:16
+  Rendered products/index.html.erb within layouts/application (7.0ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for #<Product::ActiveRecord_Relation:0x00007f1c34334008>):
+    16:     <% @products.each do |product| %>
+    17:       <tr>
+    18:         byebug
+    19:         <td><%= @products.title %></td>
+    20:         <td><%= @products.description %></td>
+    21:         <td><%= @products.price %></td>
+    22:           <% if current_user.Buyer? %>
+  
+app/views/products/index.html.erb:19:in `block in _app_views_products_index_html_erb__3553714546673159129_62020'
+app/views/products/index.html.erb:16:in `_app_views_products_index_html_erb__3553714546673159129_62020'
+Started GET "/products" for ::1 at 2022-03-15 11:22:30 +0500
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:16
+  Rendered products/index.html.erb within layouts/application (13.4ms)
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 1.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for #<Product::ActiveRecord_Relation:0x00007f1c3d3b5ca8>):
+    16:     <% @products.each do |product| %>
+    17:       <tr>
+    18:         byebug
+    19:         <td><%= @products.title %></td>
+    20:         <td><%= @products.description %></td>
+    21:         <td><%= @products.price %></td>
+    22:           <% if current_user.Buyer? %>
+  
+app/views/products/index.html.erb:19:in `block in _app_views_products_index_html_erb__3553714546673159129_70720'
+app/views/products/index.html.erb:16:in `_app_views_products_index_html_erb__3553714546673159129_70720'
+Started GET "/products" for ::1 at 2022-03-15 11:22:58 +0500
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:16
+  Rendered products/index.html.erb within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    16:     <% @products.each do |product| %>
+    17:       <tr>
+    18:         byebug
+    19:         <td><%= @product.title %></td>
+    20:         <td><%= @products.description %></td>
+    21:         <td><%= @products.price %></td>
+    22:           <% if current_user.Buyer? %>
+  
+app/views/products/index.html.erb:19:in `block in _app_views_products_index_html_erb__3553714546673159129_71260'
+app/views/products/index.html.erb:16:in `_app_views_products_index_html_erb__3553714546673159129_71260'
+Started GET "/products" for ::1 at 2022-03-15 11:23:00 +0500
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:16
+  Rendered products/index.html.erb within layouts/application (4.1ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    16:     <% @products.each do |product| %>
+    17:       <tr>
+    18:         byebug
+    19:         <td><%= @product.title %></td>
+    20:         <td><%= @products.description %></td>
+    21:         <td><%= @products.price %></td>
+    22:           <% if current_user.Buyer? %>
+  
+app/views/products/index.html.erb:19:in `block in _app_views_products_index_html_erb__3553714546673159129_71780'
+app/views/products/index.html.erb:16:in `_app_views_products_index_html_erb__3553714546673159129_71780'
+Started GET "/products" for ::1 at 2022-03-15 11:23:54 +0500
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:16
+  Rendered products/index.html.erb within layouts/application (7.0ms)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    16:     <% @products.each do |product| %>
+    17:       <tr>
+    18:         byebug
+    19:         <td><%= @product.title %></td>
+    20:         <td><%= @product.description %></td>
+    21:         <td><%= @product.price %></td>
+    22:           <% if current_user.Buyer? %>
+  
+app/views/products/index.html.erb:19:in `block in _app_views_products_index_html_erb__3553714546673159129_72300'
+app/views/products/index.html.erb:16:in `_app_views_products_index_html_erb__3553714546673159129_72300'
+Started GET "/products" for ::1 at 2022-03-15 11:23:55 +0500
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:16
+  Rendered products/index.html.erb within layouts/application (14.5ms)
+Completed 500 Internal Server Error in 50ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    16:     <% @products.each do |product| %>
+    17:       <tr>
+    18:         byebug
+    19:         <td><%= @product.title %></td>
+    20:         <td><%= @product.description %></td>
+    21:         <td><%= @product.price %></td>
+    22:           <% if current_user.Buyer? %>
+  
+app/views/products/index.html.erb:19:in `block in _app_views_products_index_html_erb__3553714546673159129_72820'
+app/views/products/index.html.erb:16:in `_app_views_products_index_html_erb__3553714546673159129_72820'
+Started GET "/products" for ::1 at 2022-03-15 11:25:45 +0500
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:16
+  Rendered products/index.html.erb within layouts/application (4.5ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    16:     <% @products.each do |product| %>
+    17:       <tr>
+    18:         
+    19:         <td><%= @product.title %></td>
+    20:         <td><%= @product.description %></td>
+    21:         <td><%= @product.price %></td>
+    22:           <% if current_user.Buyer? %>
+  
+app/views/products/index.html.erb:19:in `block in _app_views_products_index_html_erb__3553714546673159129_73340'
+app/views/products/index.html.erb:16:in `_app_views_products_index_html_erb__3553714546673159129_73340'
+Started GET "/products" for ::1 at 2022-03-15 11:25:46 +0500
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:16
+  Rendered products/index.html.erb within layouts/application (4.3ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    16:     <% @products.each do |product| %>
+    17:       <tr>
+    18:         
+    19:         <td><%= @product.title %></td>
+    20:         <td><%= @product.description %></td>
+    21:         <td><%= @product.price %></td>
+    22:           <% if current_user.Buyer? %>
+  
+app/views/products/index.html.erb:19:in `block in _app_views_products_index_html_erb__3553714546673159129_73860'
+app/views/products/index.html.erb:16:in `_app_views_products_index_html_erb__3553714546673159129_73860'
+Started GET "/products" for ::1 at 2022-03-15 11:25:47 +0500
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:16
+  Rendered products/index.html.erb within layouts/application (7.6ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    16:     <% @products.each do |product| %>
+    17:       <tr>
+    18:         
+    19:         <td><%= @product.title %></td>
+    20:         <td><%= @product.description %></td>
+    21:         <td><%= @product.price %></td>
+    22:           <% if current_user.Buyer? %>
+  
+app/views/products/index.html.erb:19:in `block in _app_views_products_index_html_erb__3553714546673159129_74380'
+app/views/products/index.html.erb:16:in `_app_views_products_index_html_erb__3553714546673159129_74380'
+Started GET "/products" for ::1 at 2022-03-15 11:25:47 +0500
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:16
+  Rendered products/index.html.erb within layouts/application (5.4ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    16:     <% @products.each do |product| %>
+    17:       <tr>
+    18:         
+    19:         <td><%= @product.title %></td>
+    20:         <td><%= @product.description %></td>
+    21:         <td><%= @product.price %></td>
+    22:           <% if current_user.Buyer? %>
+  
+app/views/products/index.html.erb:19:in `block in _app_views_products_index_html_erb__3553714546673159129_74900'
+app/views/products/index.html.erb:16:in `_app_views_products_index_html_erb__3553714546673159129_74900'
+Started GET "/products" for ::1 at 2022-03-15 11:25:47 +0500
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:16
+  Rendered products/index.html.erb within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    16:     <% @products.each do |product| %>
+    17:       <tr>
+    18:         
+    19:         <td><%= @product.title %></td>
+    20:         <td><%= @product.description %></td>
+    21:         <td><%= @product.price %></td>
+    22:           <% if current_user.Buyer? %>
+  
+app/views/products/index.html.erb:19:in `block in _app_views_products_index_html_erb__3553714546673159129_75420'
+app/views/products/index.html.erb:16:in `_app_views_products_index_html_erb__3553714546673159129_75420'
+Started GET "/products" for ::1 at 2022-03-15 11:27:46 +0500
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:16
+  Rendered products/index.html.erb within layouts/application (11.2ms)
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 2.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    16:     <% @products.each do |product| %>
+    17:       <tr>
+    18:         
+    19:         <td><%= @product.title %></td>
+    20:         <td><%= @product.description %></td>
+    21:         <td><%= @product.price %></td>
+    22:           <% if current_user.Buyer? %>
+  
+app/views/products/index.html.erb:19:in `block in _app_views_products_index_html_erb__3553714546673159129_84120'
+app/views/products/index.html.erb:16:in `_app_views_products_index_html_erb__3553714546673159129_84120'
+Started GET "/products" for ::1 at 2022-03-15 11:27:47 +0500
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:16
+  Rendered products/index.html.erb within layouts/application (6.6ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    16:     <% @products.each do |product| %>
+    17:       <tr>
+    18:         
+    19:         <td><%= @product.title %></td>
+    20:         <td><%= @product.description %></td>
+    21:         <td><%= @product.price %></td>
+    22:           <% if current_user.Buyer? %>
+  
+app/views/products/index.html.erb:19:in `block in _app_views_products_index_html_erb__3553714546673159129_84640'
+app/views/products/index.html.erb:16:in `_app_views_products_index_html_erb__3553714546673159129_84640'
+Started GET "/products" for ::1 at 2022-03-15 11:27:48 +0500
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:16
+  Rendered products/index.html.erb within layouts/application (7.6ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    16:     <% @products.each do |product| %>
+    17:       <tr>
+    18:         
+    19:         <td><%= @product.title %></td>
+    20:         <td><%= @product.description %></td>
+    21:         <td><%= @product.price %></td>
+    22:           <% if current_user.Buyer? %>
+  
+app/views/products/index.html.erb:19:in `block in _app_views_products_index_html_erb__3553714546673159129_85160'
+app/views/products/index.html.erb:16:in `_app_views_products_index_html_erb__3553714546673159129_85160'
+Started GET "/products" for ::1 at 2022-03-15 11:27:48 +0500
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:16
+  Rendered products/index.html.erb within layouts/application (8.0ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    16:     <% @products.each do |product| %>
+    17:       <tr>
+    18:         
+    19:         <td><%= @product.title %></td>
+    20:         <td><%= @product.description %></td>
+    21:         <td><%= @product.price %></td>
+    22:           <% if current_user.Buyer? %>
+  
+app/views/products/index.html.erb:19:in `block in _app_views_products_index_html_erb__3553714546673159129_85680'
+app/views/products/index.html.erb:16:in `_app_views_products_index_html_erb__3553714546673159129_85680'
+Started GET "/products" for ::1 at 2022-03-15 11:27:49 +0500
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:16
+  Rendered products/index.html.erb within layouts/application (3.1ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    16:     <% @products.each do |product| %>
+    17:       <tr>
+    18:         
+    19:         <td><%= @product.title %></td>
+    20:         <td><%= @product.description %></td>
+    21:         <td><%= @product.price %></td>
+    22:           <% if current_user.Buyer? %>
+  
+app/views/products/index.html.erb:19:in `block in _app_views_products_index_html_erb__3553714546673159129_86200'
+app/views/products/index.html.erb:16:in `_app_views_products_index_html_erb__3553714546673159129_86200'
+Started GET "/products" for ::1 at 2022-03-15 11:47:13 +0500
+  
+SyntaxError (/home/hamid/laptop-word/app/controllers/products_controller.rb:62: syntax error, unexpected `end', expecting end-of-input):
+  
+app/controllers/products_controller.rb:62: syntax error, unexpected `end', expecting end-of-input
+Started GET "/products" for ::1 at 2022-03-15 11:47:30 +0500
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:16
+  Rendered products/index.html.erb within layouts/application (17.1ms)
+Completed 200 OK in 130ms (Views: 102.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/products/new" for ::1 at 2022-03-15 11:49:08 +0500
+Processing by ProductsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (0.7ms)
+  Rendered products/new.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 1.1ms)
+
+
+  
+SyntaxError (/home/hamid/laptop-word/app/views/products/_form.html.erb:39: syntax error, unexpected `ensure', expecting end-of-input
+          ensure
+          ^~~~~~
+):
+  
+app/views/products/_form.html.erb:39: syntax error, unexpected `ensure', expecting end-of-input
+app/views/products/new.html.erb:3:in `_app_views_products_new_html_erb___646979872470143073_111720'
+Started GET "/products/new" for ::1 at 2022-03-15 11:50:08 +0500
+Processing by ProductsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (387.0ms)
+  Rendered products/new.html.erb within layouts/application (388.5ms)
+Completed 500 Internal Server Error in 402ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `form' for #<#<Class:0x00007f1c3dc661e0>:0x00007f1c4800d488>
+Did you mean?  for
+               fork):
+    12:   <% end %>
+    13:  
+    14:   <div class="field">
+    15:     <%= form.label :title %>
+    16:     <%= form.text_field :title %>
+    17:   </div>
+    18: 
+  
+app/views/products/_form.html.erb:15:in `_app_views_products__form_html_erb__2163698724548762939_112280'
+app/views/products/new.html.erb:3:in `_app_views_products_new_html_erb___646979872470143073_112260'
+Started GET "/products/new" for ::1 at 2022-03-15 11:50:44 +0500
+Processing by ProductsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (249.3ms)
+  Rendered products/new.html.erb within layouts/application (250.2ms)
+Completed 500 Internal Server Error in 317ms (ActiveRecord: 3.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `form' for #<#<Class:0x00007f1c34329018>:0x00007f1c34322f10>
+Did you mean?  for
+               fork):
+    12:   <% end %>
+    13:  
+    14:   <div class="field">
+    15:     <%= form.label :title %>
+    16:     <%= form.text_field :title %>
+    17:   </div>
+    18: 
+  
+app/views/products/_form.html.erb:15:in `_app_views_products__form_html_erb__2163698724548762939_121200'
+app/views/products/new.html.erb:3:in `_app_views_products_new_html_erb___646979872470143073_121180'
+Started GET "/products" for ::1 at 2022-03-15 11:50:52 +0500
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:16
+  Rendered products/index.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 248ms (Views: 228.5ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/products/4/edit" for ::1 at 2022-03-15 11:50:55 +0500
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:15
+  Rendering products/edit.html.erb within layouts/application
+  Rendered products/_form.html.erb (219.1ms)
+  Rendered products/edit.html.erb within layouts/application (220.3ms)
+Completed 500 Internal Server Error in 229ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `form' for #<#<Class:0x00007f1c34329018>:0x00007f1c34253738>
+Did you mean?  for
+               fork):
+    12:   <% end %>
+    13:  
+    14:   <div class="field">
+    15:     <%= form.label :title %>
+    16:     <%= form.text_field :title %>
+    17:   </div>
+    18: 
+  
+app/views/products/_form.html.erb:15:in `_app_views_products__form_html_erb__2163698724548762939_121860'
+app/views/products/edit.html.erb:3:in `_app_views_products_edit_html_erb___4022113354988312561_121840'
+Started GET "/products/4/edit" for ::1 at 2022-03-15 11:52:24 +0500
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:15
+  Rendering products/edit.html.erb within layouts/application
+  Rendered products/_form.html.erb (323.5ms)
+  Rendered products/edit.html.erb within layouts/application (325.3ms)
+Completed 500 Internal Server Error in 334ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x00007f1c34329018>:0x00007f1c3dd93a90>):
+    12:   <% end %>
+    13:  
+    14:   <div class="field">
+    15:     <%= f.label :title %>
+    16:     <%= f.text_field :title %>
+    17:   </div>
+    18: 
+  
+app/views/products/_form.html.erb:15:in `_app_views_products__form_html_erb__2163698724548762939_122420'
+app/views/products/edit.html.erb:3:in `_app_views_products_edit_html_erb___4022113354988312561_122400'
+Started GET "/products/4/edit" for ::1 at 2022-03-15 11:53:25 +0500
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:15
+  Rendering products/edit.html.erb within layouts/application
+  Rendered products/_form.html.erb (7.0ms)
+  Rendered products/edit.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 120ms (Views: 115.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products" for ::1 at 2022-03-15 11:53:30 +0500
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:16
+  Rendered products/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 131ms (Views: 127.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products/4/edit" for ::1 at 2022-03-15 11:53:33 +0500
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:15
+  Rendering products/edit.html.erb within layouts/application
+  Rendered products/_form.html.erb (17.1ms)
+  Rendered products/edit.html.erb within layouts/application (21.9ms)
+Completed 200 OK in 132ms (Views: 116.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/products" for ::1 at 2022-03-15 11:53:35 +0500
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:16
+  Rendered products/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 132ms (Views: 122.3ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/products/2" for ::1 at 2022-03-15 11:53:41 +0500
+Processing by ProductsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"I06ZeJj2qdMyr7ZNZLEWaBICJSA5XyY7dv+Gzrvs5Tzo4l9JFoO6Zw85LuO7kS/yxKsd0+q4JoSFXMERx34q6w==", "id"=>"2"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:47
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/products_controller.rb:48
+  [1m[36mProduct Destroy (0.8ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 2]]
+  ↳ app/controllers/products_controller.rb:48
+  [1m[35m (4.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/products_controller.rb:48
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ?[0m  [["record_id", 2], ["record_type", "Product"], ["name", "images"]]
+  ↳ app/controllers/products_controller.rb:48
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/products_controller.rb:48
+  [1m[36mActiveStorage::Attachment Destroy (1.0ms)[0m  [1m[31mDELETE FROM "active_storage_attachments" WHERE "active_storage_attachments"."id" = ?[0m  [["id", 4]]
+  ↳ app/controllers/products_controller.rb:48
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/products_controller.rb:48
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:48
+[ActiveJob] Enqueued ActiveStorage::PurgeJob (Job ID: babfad55-c896-4d3b-8e51-bb0c4ba69f80) to Async(default) with arguments: #<GlobalID:0x00007f1c54039720 @uri=#<URI::GID gid://laptop/ActiveStorage::Blob/4>>
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/products_controller.rb:48
+  [1m[36mActiveStorage::Attachment Destroy (0.4ms)[0m  [1m[31mDELETE FROM "active_storage_attachments" WHERE "active_storage_attachments"."id" = ?[0m  [["id", 5]]
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:48
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [babfad55-c896-4d3b-8e51-bb0c4ba69f80] Performing ActiveStorage::PurgeJob (Job ID: babfad55-c896-4d3b-8e51-bb0c4ba69f80) from Async(default) with arguments: #<GlobalID:0x0000558f96c5fde8 @uri=#<URI::GID gid://laptop/ActiveStorage::Blob/4>>
+  ↳ app/controllers/products_controller.rb:48
+[ActiveJob] [ActiveStorage::PurgeJob] [babfad55-c896-4d3b-8e51-bb0c4ba69f80]   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:48
+[ActiveJob] [ActiveStorage::PurgeJob] [babfad55-c896-4d3b-8e51-bb0c4ba69f80]   ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[ActiveJob] Enqueued ActiveStorage::PurgeJob (Job ID: d3d78a6e-dd8b-4cfc-bdac-8de54b1c39ed) to Async(default) with arguments: #<GlobalID:0x0000558f96c348a0 @uri=#<URI::GID gid://laptop/ActiveStorage::Blob/5>>
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/products
+[ActiveJob] [ActiveStorage::PurgeJob] [d3d78a6e-dd8b-4cfc-bdac-8de54b1c39ed] Performing ActiveStorage::PurgeJob (Job ID: d3d78a6e-dd8b-4cfc-bdac-8de54b1c39ed) from Async(default) with arguments: #<GlobalID:0x0000558f96829990 @uri=#<URI::GID gid://laptop/ActiveStorage::Blob/5>>
+Completed 302 Found in 132ms (ActiveRecord: 16.7ms)
+
+
+[ActiveJob] [ActiveStorage::PurgeJob] [d3d78a6e-dd8b-4cfc-bdac-8de54b1c39ed]   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [d3d78a6e-dd8b-4cfc-bdac-8de54b1c39ed]   ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::PurgeJob] [babfad55-c896-4d3b-8e51-bb0c4ba69f80]   [1m[36mActiveStorage::Attachment Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = ? LIMIT ?[0m  [["blob_id", 4], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [babfad55-c896-4d3b-8e51-bb0c4ba69f80]   ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Started GET "/products" for ::1 at 2022-03-15 11:53:41 +0500
+[ActiveJob] [ActiveStorage::PurgeJob] [babfad55-c896-4d3b-8e51-bb0c4ba69f80]   [1m[36mActiveStorage::Blob Destroy (0.3ms)[0m  [1m[31mDELETE FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ?[0m  [["id", 4]]
+[ActiveJob] [ActiveStorage::PurgeJob] [babfad55-c896-4d3b-8e51-bb0c4ba69f80]   ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::PurgeJob] [babfad55-c896-4d3b-8e51-bb0c4ba69f80]   [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::PurgeJob] [d3d78a6e-dd8b-4cfc-bdac-8de54b1c39ed]   [1m[36mActiveStorage::Attachment Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = ? LIMIT ?[0m  [["blob_id", 5], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [babfad55-c896-4d3b-8e51-bb0c4ba69f80]   ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::PurgeJob] [d3d78a6e-dd8b-4cfc-bdac-8de54b1c39ed]   ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering products/index.html.erb within layouts/application
+[ActiveJob] [ActiveStorage::PurgeJob] [d3d78a6e-dd8b-4cfc-bdac-8de54b1c39ed]   [1m[36mActiveStorage::Blob Destroy (0.5ms)[0m  [1m[31mDELETE FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ?[0m  [["id", 5]]
+[ActiveJob] [ActiveStorage::PurgeJob] [d3d78a6e-dd8b-4cfc-bdac-8de54b1c39ed]   ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:16
+[ActiveJob] [ActiveStorage::PurgeJob] [d3d78a6e-dd8b-4cfc-bdac-8de54b1c39ed]   [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  Rendered products/index.html.erb within layouts/application (6.8ms)
+[ActiveJob] [ActiveStorage::PurgeJob] [d3d78a6e-dd8b-4cfc-bdac-8de54b1c39ed]   ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::PurgeJob] [babfad55-c896-4d3b-8e51-bb0c4ba69f80]   [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 4], ["record_type", "ActiveStorage::Blob"], ["name", "preview_image"], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [babfad55-c896-4d3b-8e51-bb0c4ba69f80]   ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::PurgeJob] [babfad55-c896-4d3b-8e51-bb0c4ba69f80] [36m  Disk Storage (0.9ms) [0m[31mDeleted file from key: fJmKq2Z3As6GNDimJi5U1vFV[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [babfad55-c896-4d3b-8e51-bb0c4ba69f80] [36m  Disk Storage (0.4ms) [0m[31mDeleted files by key prefix: variants/fJmKq2Z3As6GNDimJi5U1vFV/[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [babfad55-c896-4d3b-8e51-bb0c4ba69f80] Performed ActiveStorage::PurgeJob (Job ID: babfad55-c896-4d3b-8e51-bb0c4ba69f80) from Async(default) in 68.69ms
+[ActiveJob] [ActiveStorage::PurgeJob] [d3d78a6e-dd8b-4cfc-bdac-8de54b1c39ed]   [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 5], ["record_type", "ActiveStorage::Blob"], ["name", "preview_image"], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [d3d78a6e-dd8b-4cfc-bdac-8de54b1c39ed]   ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::PurgeJob] [d3d78a6e-dd8b-4cfc-bdac-8de54b1c39ed] [36m  Disk Storage (0.3ms) [0m[31mDeleted file from key: ibLAhDLSs7Ng9rV3ZMtXeJVv[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [d3d78a6e-dd8b-4cfc-bdac-8de54b1c39ed] [36m  Disk Storage (0.1ms) [0m[31mDeleted files by key prefix: variants/ibLAhDLSs7Ng9rV3ZMtXeJVv/[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [d3d78a6e-dd8b-4cfc-bdac-8de54b1c39ed] Performed ActiveStorage::PurgeJob (Job ID: d3d78a6e-dd8b-4cfc-bdac-8de54b1c39ed) from Async(default) in 63.09ms
+Completed 200 OK in 111ms (Views: 107.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products/new" for ::1 at 2022-03-15 11:53:46 +0500
+Processing by ProductsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (3.5ms)
+  Rendered products/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 80ms (Views: 75.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/products/new" for ::1 at 2022-03-15 11:54:00 +0500
+  
+ActionController::RoutingError (No route matches [POST] "/products/new"):
+  
+actionpack (5.2.6.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/products" for ::1 at 2022-03-15 11:57:47 +0500
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:16
+  Rendered products/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 81ms (Views: 76.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products/4/edit" for ::1 at 2022-03-15 11:57:51 +0500
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:15
+  Rendering products/edit.html.erb within layouts/application
+  Rendered products/_form.html.erb (9.6ms)
+  Rendered products/edit.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 114ms (Views: 103.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/products" for ::1 at 2022-03-15 11:57:54 +0500
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:16
+  Rendered products/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 128ms (Views: 114.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/products/3/edit" for ::1 at 2022-03-15 11:57:57 +0500
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:15
+  Rendering products/edit.html.erb within layouts/application
+  Rendered products/_form.html.erb (18.4ms)
+  Rendered products/edit.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 143ms (Views: 133.5ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/products/3/edit" for ::1 at 2022-03-15 11:58:00 +0500
+  
+ActionController::RoutingError (No route matches [POST] "/products/3/edit"):
+  
+actionpack (5.2.6.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/products/3/edit" for ::1 at 2022-03-15 12:01:00 +0500
+  
+ActionController::RoutingError (No route matches [POST] "/products/3/edit"):
+  
+actionpack (5.2.6.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/products/3/edit" for ::1 at 2022-03-15 12:02:43 +0500
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  
+ActionController::RoutingError (No route matches [POST] "/products/3/edit"):
+  
+actionpack (5.2.6.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/products" for ::1 at 2022-03-15 12:02:53 +0500
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:16
+  Rendered products/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 359ms (Views: 286.1ms | ActiveRecord: 7.7ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2022-03-15 12:03:01 +0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ywyWHjCkEM6bwPAFNX/HyU7bU4MMIVlxMDme6Ig4DAsAoFAvvtEDeqZWaKvqX/5TmHJrcN/GWc7Dmtk39KrD3A=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 26ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2022-03-15 12:03:01 +0500
+Processing by ProductsController#index as HTML
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-03-15 12:03:01 +0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 80ms (Views: 78.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2022-03-15 12:04:37 +0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fXxZKI3VX0vIS0gn+ecW2BZViyy8viYZoUpuHvQBf3G88uTxiebo5mpKSeag6x7JK1nnLpwF3+HC+/dyB8GykA==", "user"=>{"email"=>"ifaheem520@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "ifaheem520@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 353ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/dashboard" for ::1 at 2022-03-15 12:04:38 +0500
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering home/dashboard.html.erb within layouts/application
+  Rendered home/dashboard.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 66ms (Views: 64.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products" for ::1 at 2022-03-15 12:04:39 +0500
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:16
+  Rendered products/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 96ms (Views: 87.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/products/new" for ::1 at 2022-03-15 12:04:42 +0500
+Processing by ProductsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (27.1ms)
+  Rendered products/new.html.erb within layouts/application (31.9ms)
+Completed 200 OK in 130ms (Views: 120.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/products/new" for ::1 at 2022-03-15 12:04:44 +0500
+  
+ActionController::RoutingError (No route matches [POST] "/products/new"):
+  
+actionpack (5.2.6.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/products/new" for ::1 at 2022-03-15 12:10:53 +0500
+  
+ActionController::RoutingError (No route matches [POST] "/products/new"):
+  
+actionpack (5.2.6.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/products/new" for ::1 at 2022-03-15 12:18:51 +0500
+  
+ActionController::RoutingError (No route matches [POST] "/products/new"):
+  
+actionpack (5.2.6.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/products/new" for ::1 at 2022-03-15 12:18:54 +0500
+Processing by ProductsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (4.5ms)
+  Rendered products/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 130ms (Views: 87.7ms | ActiveRecord: 2.3ms)
+
+
+Started POST "/products/new" for ::1 at 2022-03-15 12:18:57 +0500
+  
+ActionController::RoutingError (No route matches [POST] "/products/new"):
+  
+actionpack (5.2.6.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/products/new" for ::1 at 2022-03-15 12:22:51 +0500
+  
+ActionController::RoutingError (No route matches [POST] "/products/new"):
+  
+actionpack (5.2.6.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/products/new" for ::1 at 2022-03-15 12:35:21 +0500
+  
+ActionController::RoutingError (No route matches [POST] "/products/new"):
+  
+actionpack (5.2.6.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/products/new" for ::1 at 2022-03-15 12:35:38 +0500
+  
+ActionController::RoutingError (No route matches [POST] "/products/new"):
+  
+actionpack (5.2.6.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[36mProduct Load (11.7ms)[0m  [1m[34mSELECT  "products".* FROM "products" LIMIT ?[0m  [["LIMIT", 11]]
+Started POST "/products/new" for ::1 at 2022-03-15 12:48:20 +0500
+  
+ActionController::RoutingError (No route matches [POST] "/products/new"):
+  
+actionpack (5.2.6.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started DELETE "/users/sign_out" for ::1 at 2022-03-15 12:49:33 +0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"y+kYNUHQjqnbsztmtkLXk7XIAo2WCPEPtptaR8ncgcA+O0Rajg/nMIuKI5WZxTaOSlVu3iBV0vG4Cgc243IRHA=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 20ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2022-03-15 12:49:33 +0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/hamid/.rvm/gems/ruby-2.7.3/gems/railties-5.2.6.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/hamid/.rvm/gems/ruby-2.7.3/gems/railties-5.2.6.2/lib/rails/templates/rails/welcome/index.html.erb (2.4ms)
+Completed 200 OK in 6ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-03-15 12:49:59 +0500
+Processing by ProductsController#index as HTML
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-03-15 12:49:59 +0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 125ms (Views: 99.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-03-15 12:50:01 +0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (1.3ms)
+  Rendered devise/shared/_links.html.erb (3.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (32.0ms)
+Completed 200 OK in 146ms (Views: 141.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2022-03-15 12:51:11 +0500
+Processing by Users::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1Z/FBhYbUUPn97fnsR7v/D/rJlIIW3r7Z0xy5jGqj1DaVkVpPgsgs8lYOzURIHnEKt+ZtpZhspXBkADGAm15tg==", "user"=>{"first_name"=>"abdul", "last_name"=>"abdul", "user_name"=>"abdul45", "email"=>"abdul45@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "role"=>"Seller", "Address"=>"nizamabad block57, dgkhan", "city"=>"dgkhan", "postal_code"=>"1122"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "abdul45@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "abdul45@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "role", "confirmation_token", "confirmation_sent_at", "first_name", "last_name", "user_name", "city", "Address", "postal_code") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "abdul45@gmail.com"], ["encrypted_password", "$2a$12$1IfCe7Xh0Uu2CRXY1v1T8eL9DOjwqYZHFAW3WYigmZPwdOirF7vjG"], ["created_at", "2022-03-15 07:51:11.823277"], ["updated_at", "2022-03-15 07:51:11.823277"], ["role", 1], ["confirmation_token", "nbQnJUAvA4FaRVy3PSMs"], ["confirmation_sent_at", "2022-03-15 07:51:11.823392"], ["first_name", "abdul"], ["last_name", "abdul"], ["user_name", "abdul45"], ["city", "dgkhan"], ["Address", "nizamabad block57, dgkhan"], ["postal_code", 1122]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (3.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering devise/mailer/confirmation_instructions.html.erb
+  Rendered devise/mailer/confirmation_instructions.html.erb (0.7ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 30.3ms
+Sent mail to abdul45@gmail.com (4131.0ms)
+Date: Tue, 15 Mar 2022 12:51:11 +0500
+From: support@laptopworld.com
+Reply-To: support@laptopworld.com
+To: abdul45@gmail.com
+Message-ID: <6230456fe504c_96b8854663bf@hamid-ThinkPad-T470-W10DG.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome abdul45@gmail.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=nbQnJUAvA4FaRVy3PSMs">Confirm my account</a></p>
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 4581ms (ActiveRecord: 4.5ms)
+
+
+Started GET "/" for ::1 at 2022-03-15 12:51:16 +0500
+Processing by ProductsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-03-15 12:51:16 +0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 86ms (Views: 84.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/confirmation?confirmation_token=nbQnJUAvA4FaRVy3PSMs" for ::1 at 2022-03-15 12:51:33 +0500
+Processing by Devise::ConfirmationsController#show as HTML
+  Parameters: {"confirmation_token"=>"nbQnJUAvA4FaRVy3PSMs"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."confirmation_token" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["confirmation_token", "nbQnJUAvA4FaRVy3PSMs"], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Update (0.3ms)[0m  [1m[33mUPDATE "users" SET "confirmed_at" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["confirmed_at", "2022-03-15 07:51:33.431748"], ["updated_at", "2022-03-15 07:51:33.435961"], ["id", 6]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 17ms (ActiveRecord: 3.6ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-03-15 12:51:33 +0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 112ms (Views: 110.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2022-03-15 12:51:44 +0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PToFyKiTUUUODu+47siu/3ff+AFBBhi3gN4idvO/2OA19s+r6S3VyhMZNl+boUENpHfLeeNoK7QV9AO7H+rjHQ==", "user"=>{"email"=>"abdul45@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "abdul45@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 341ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/dashboard" for ::1 at 2022-03-15 12:51:45 +0500
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering home/dashboard.html.erb within layouts/application
+  Rendered home/dashboard.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 89ms (Views: 85.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products" for ::1 at 2022-03-15 12:51:46 +0500
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:16
+  Rendered products/index.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 106ms (Views: 100.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/products/new" for ::1 at 2022-03-15 12:53:01 +0500
+Processing by ProductsController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (10.1ms)
+  Rendered products/new.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 142ms (Views: 132.4ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/products" for ::1 at 2022-03-15 12:53:04 +0500
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/s0ZcRHqPuZEjVSata28OgTnCNINICVLLzF1Vq5GlNvKR/NLjfOpW1ezSxWEIegHIFqpWXymA54jMxYPjI2s7g==", "product"=>{"title"=>"", "description"=>"", "price"=>""}, "commit"=>"Create Product"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/products_controller.rb:21:in `create'
+Started POST "/products" for ::1 at 2022-03-15 12:53:32 +0500
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/s0ZcRHqPuZEjVSata28OgTnCNINICVLLzF1Vq5GlNvKR/NLjfOpW1ezSxWEIegHIFqpWXymA54jMxYPjI2s7g==", "product"=>{"title"=>"", "description"=>"", "price"=>""}, "commit"=>"Create Product"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.4ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/products_controller.rb:21:in `create'
+Started GET "/products/4/edit" for ::1 at 2022-03-15 12:53:43 +0500
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:35
+  Rendering products/edit.html.erb within layouts/application
+  Rendered products/_form.html.erb (19.4ms)
+  Rendered products/edit.html.erb within layouts/application (24.6ms)
+Completed 200 OK in 143ms (Views: 129.5ms | ActiveRecord: 1.4ms)
+
+
+Started PATCH "/products/4" for ::1 at 2022-03-15 12:53:45 +0500
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"J1twVIgzZL1AR7DF1ZOIXuyRsWSgh5OB+byGb7fcST/oVGJd/1eslAO6BnlYendzpHvkG5px1bGi0Cb10tYAHA==", "product"=>{"title"=>"alienware", "description"=>"alienware test description", "price"=>"200000.0"}, "commit"=>"Update Product", "id"=>"4"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:39
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/products_controller.rb:42
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/products_controller.rb:42
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 1.5ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/products_controller.rb:42:in `block in update'
+app/controllers/products_controller.rb:41:in `update'
+Started PATCH "/products/4" for ::1 at 2022-03-15 12:54:48 +0500
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"J1twVIgzZL1AR7DF1ZOIXuyRsWSgh5OB+byGb7fcST/oVGJd/1eslAO6BnlYendzpHvkG5px1bGi0Cb10tYAHA==", "product"=>{"title"=>"alienware", "description"=>"alienware test description", "price"=>"200000.0"}, "commit"=>"Update Product", "id"=>"4"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:39
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/products_controller.rb:42
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/products_controller.rb:42
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 2.6ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/products_controller.rb:42:in `block in update'
+app/controllers/products_controller.rb:41:in `update'
+Started POST "/users/sign_in" for ::1 at 2022-03-15 12:56:19 +0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4XRQu54QYbXJWA1nGWD26ElXIgjjqfGsnQOY2Ti9IC3puJrY367lOtRP1IBsCRkamv8RcEHHwq8IKbkU1Ogb0A==", "user"=>{"email"=>"abdul45@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/dashboard
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 8ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/dashboard" for ::1 at 2022-03-15 12:56:19 +0500
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering home/dashboard.html.erb within layouts/application
+  Rendered home/dashboard.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 95ms (Views: 91.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products" for ::1 at 2022-03-15 12:56:21 +0500
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:16
+  Rendered products/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 93ms (Views: 87.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/products/new" for ::1 at 2022-03-15 12:56:27 +0500
+Processing by ProductsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (6.2ms)
+  Rendered products/new.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 97ms (Views: 89.9ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/products" for ::1 at 2022-03-15 12:56:28 +0500
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"G9oiC8UE9dx6PCNZXAqG12MfMTW1PWq2wjsw8GSpV5kvUMgxWR1iYWkCPNZthtLqR6KQvsS7TGPOOVOpRmJvrA==", "product"=>{"title"=>"", "description"=>"", "price"=>""}, "commit"=>"Create Product"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 1.0ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/products_controller.rb:21:in `create'
+Started POST "/products" for ::1 at 2022-03-15 12:57:55 +0500
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"G9oiC8UE9dx6PCNZXAqG12MfMTW1PWq2wjsw8GSpV5kvUMgxWR1iYWkCPNZthtLqR6KQvsS7TGPOOVOpRmJvrA==", "product"=>{"title"=>"", "description"=>"", "price"=>""}, "commit"=>"Create Product"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/products_controller.rb:21
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/products_controller.rb:21
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/products_controller.rb:24
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/products_controller.rb:24
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (3.1ms)
+  Rendered products/new.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 124ms (Views: 83.7ms | ActiveRecord: 2.4ms)
+
+
+Started POST "/products" for ::1 at 2022-03-15 12:59:00 +0500
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+obsxQK15xuCLXgsE4PjCQg5YIbzmZF2+Sn9Voz8+KuDOAxBf04HhPcM3wDhrHOfCzWfkOvtNAKWifObGBj6Bw==", "product"=>{"title"=>"", "description"=>"", "price"=>""}, "commit"=>"Create Product"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/products_controller.rb:21
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/products_controller.rb:21
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/products_controller.rb:24
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/products_controller.rb:24
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (7.6ms)
+  Rendered products/new.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 118ms (Views: 102.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/products" for ::1 at 2022-03-15 12:59:21 +0500
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:16
+  Rendered products/index.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 124ms (Views: 113.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/products/3/edit" for ::1 at 2022-03-15 12:59:23 +0500
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:35
+  Rendering products/edit.html.erb within layouts/application
+  Rendered products/_form.html.erb (7.8ms)
+  Rendered products/edit.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 114ms (Views: 101.9ms | ActiveRecord: 1.2ms)
+
+
+Started PATCH "/products/3" for ::1 at 2022-03-15 12:59:26 +0500
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kjWZu/hC/uUnt4SOmb9Ibm/r+hyTzzavjXS0ACrhlHxGXzQ+rRBzd4ekp5M3P8gJ0U3q7lIFvPag1jNKjihxLw==", "product"=>{"title"=>"dell latitude", "description"=>"dell test description", "price"=>"450000.0"}, "commit"=>"Update Product", "id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:39
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/products_controller.rb:42
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/products_controller.rb:42
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.4ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/products_controller.rb:42:in `block in update'
+app/controllers/products_controller.rb:41:in `update'
+Started PATCH "/products/3" for ::1 at 2022-03-15 13:00:13 +0500
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kjWZu/hC/uUnt4SOmb9Ibm/r+hyTzzavjXS0ACrhlHxGXzQ+rRBzd4ekp5M3P8gJ0U3q7lIFvPag1jNKjihxLw==", "product"=>{"title"=>"dell latitude", "description"=>"dell test description", "price"=>"450000.0"}, "commit"=>"Update Product", "id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:39
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/products_controller.rb:42
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/products_controller.rb:42
+  Rendering products/edit.html.erb within layouts/application
+  Rendered products/_form.html.erb (3.6ms)
+  Rendered products/edit.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 122ms (Views: 83.2ms | ActiveRecord: 1.9ms)
+
+
+Started PATCH "/products/3" for ::1 at 2022-03-15 13:00:19 +0500
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BRaKhn+dHhw5ZDH1wfzyaJLsUFGmjTj9YvaKPK5oE0F8qGoCAmb+g0xFltkz02L+keCvR775nYkNVoTxOowR7Q==", "product"=>{"title"=>"dell latitude", "description"=>"dell test description edited", "price"=>"450000.0"}, "commit"=>"Update Product", "id"=>"3"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:39
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/products_controller.rb:42
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/products_controller.rb:42
+  Rendering products/edit.html.erb within layouts/application
+  Rendered products/_form.html.erb (17.7ms)
+  Rendered products/edit.html.erb within layouts/application (25.5ms)
+Completed 200 OK in 172ms (Views: 147.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/products" for ::1 at 2022-03-15 13:00:23 +0500
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:16
+  Rendered products/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 100ms (Views: 91.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/products/4/edit" for ::1 at 2022-03-15 13:00:30 +0500
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:35
+  Rendering products/edit.html.erb within layouts/application
+  Rendered products/_form.html.erb (7.6ms)
+  Rendered products/edit.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 115ms (Views: 105.4ms | ActiveRecord: 0.6ms)
+
+
+Started PATCH "/products/4" for ::1 at 2022-03-15 13:00:44 +0500
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"d+KaCVPz+4urSSO7/mm+iLfmnmcOC8ygjpDlmSI/fDW47YgAJJczoui0lQdzgEGl/wzLGDT9ipDV/EUDRzU1Fg==", "product"=>{"title"=>"alienware", "description"=>"alienware test description -edited", "price"=>"200000.0"}, "commit"=>"Update Product", "id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:39
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/products_controller.rb:42
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/products_controller.rb:42
+  Rendering products/edit.html.erb within layouts/application
+  Rendered products/_form.html.erb (3.2ms)
+  Rendered products/edit.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 138ms (Views: 131.5ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/products/4" for ::1 at 2022-03-15 13:02:45 +0500
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"V7Bqhtr4zzJa5ws9pylxrMW3MjVla7NHpe31DOY0ObouDooCpwMvrS/GrBFVBuE6xrvNI30fFjPKTfvBctA7Fg==", "product"=>{"title"=>"alienware", "description"=>"alienware test description -edited", "price"=>"200000.0"}, "commit"=>"Update Product", "id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:39
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/products_controller.rb:42
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/products_controller.rb:42
+  Rendering products/edit.html.erb within layouts/application
+  Rendered products/_form.html.erb (6.8ms)
+  Rendered products/edit.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 143ms (Views: 133.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products/4" for ::1 at 2022-03-15 13:05:02 +0500
+  
+SyntaxError (/home/hamid/laptop-word/app/models/product.rb:5: syntax error, unexpected ':', expecting `end'
+	belongs_to :user :optional => true
+	                 ^
+):
+  
+app/models/product.rb:5: syntax error, unexpected ':', expecting `end'
+app/controllers/products_controller.rb:1:in `<main>'
+Started GET "/products/4" for ::1 at 2022-03-15 13:05:15 +0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:7
+  Rendering products/show.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ?[0m  [["record_id", 4], ["record_type", "Product"], ["name", "images"]]
+  ↳ app/views/products/show.html.erb:18
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ?[0m  [["record_id", 4], ["record_type", "Product"], ["name", "images"]]
+  ↳ app/views/products/show.html.erb:19
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/products/show.html.erb:19
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/views/products/show.html.erb:19
+  Rendered products/show.html.erb within layouts/application (40.0ms)
+Completed 200 OK in 174ms (Views: 134.1ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--f00a4e61c3a18a04e480d90836d6b8efa4c04284/alienware2.jpeg" for ::1 at 2022-03-15 13:05:15 +0500
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--e11f7fb17b22bc78614b3114c58d288c32a81a32/alienware1.jpeg" for ::1 at 2022-03-15 13:05:15 +0500
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--f00a4e61c3a18a04e480d90836d6b8efa4c04284", "filename"=>"alienware2"}
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--e11f7fb17b22bc78614b3114c58d288c32a81a32", "filename"=>"alienware1"}
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+[36m  Disk Storage (1.2ms) [0m[34mGenerated URL for file at key: arFJyPPHMQpqLKzppG9Memed (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRZWEpHU25sUVVFaE5VWEJ4VEV0NmNIQkhPVTFsYldWa0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSkphVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZV3hwWlc1M1lYSmxNaTVxY0dWbklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZGhiR2xsYm5kaGNtVXlMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjItMDMtMTVUMDg6MTA6MTUuODYzWiIsInB1ciI6ImJsb2Jfa2V5In19--5ed2dcec52b575e204ba83987bd5bff20efcd03e/alienware2.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22alienware2.jpeg%22%3B+filename%2A%3DUTF-8%27%27alienware2.jpeg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRZWEpHU25sUVVFaE5VWEJ4VEV0NmNIQkhPVTFsYldWa0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSkphVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZV3hwWlc1M1lYSmxNaTVxY0dWbklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZGhiR2xsYm5kaGNtVXlMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjItMDMtMTVUMDg6MTA6MTUuODYzWiIsInB1ciI6ImJsb2Jfa2V5In19--5ed2dcec52b575e204ba83987bd5bff20efcd03e/alienware2.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22alienware2.jpeg%22%3B+filename%2A%3DUTF-8%27%27alienware2.jpeg
+Completed 302 Found in 7ms (ActiveRecord: 0.2ms)
+
+
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+[36m  Disk Storage (0.7ms) [0m[34mGenerated URL for file at key: RBcsPun46SsVHYHSdzBSNuWz (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRVa0pqYzFCMWJqUTJVM05XU0ZsSVUyUjZRbE5PZFZkNkJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSkphVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZV3hwWlc1M1lYSmxNUzVxY0dWbklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZGhiR2xsYm5kaGNtVXhMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjItMDMtMTVUMDg6MTA6MTUuODY5WiIsInB1ciI6ImJsb2Jfa2V5In19--d832b927698814860c3002f0feed8a8b1b3cc4fa/alienware1.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22alienware1.jpeg%22%3B+filename%2A%3DUTF-8%27%27alienware1.jpeg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRVa0pqYzFCMWJqUTJVM05XU0ZsSVUyUjZRbE5PZFZkNkJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSkphVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZV3hwWlc1M1lYSmxNUzVxY0dWbklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZGhiR2xsYm5kaGNtVXhMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjItMDMtMTVUMDg6MTA6MTUuODY5WiIsInB1ciI6ImJsb2Jfa2V5In19--d832b927698814860c3002f0feed8a8b1b3cc4fa/alienware1.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22alienware1.jpeg%22%3B+filename%2A%3DUTF-8%27%27alienware1.jpeg
+Completed 302 Found in 12ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRVa0pqYzFCMWJqUTJVM05XU0ZsSVUyUjZRbE5PZFZkNkJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSkphVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZV3hwWlc1M1lYSmxNUzVxY0dWbklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZGhiR2xsYm5kaGNtVXhMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjItMDMtMTVUMDg6MTA6MTUuODY5WiIsInB1ciI6ImJsb2Jfa2V5In19--d832b927698814860c3002f0feed8a8b1b3cc4fa/alienware1.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22alienware1.jpeg%22%3B+filename%2A%3DUTF-8%27%27alienware1.jpeg" for ::1 at 2022-03-15 13:05:15 +0500
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"alienware1.jpeg\"; filename*=UTF-8''alienware1.jpeg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRVa0pqYzFCMWJqUTJVM05XU0ZsSVUyUjZRbE5PZFZkNkJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSkphVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZV3hwWlc1M1lYSmxNUzVxY0dWbklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZGhiR2xsYm5kaGNtVXhMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjItMDMtMTVUMDg6MTA6MTUuODY5WiIsInB1ciI6ImJsb2Jfa2V5In19--d832b927698814860c3002f0feed8a8b1b3cc4fa", "filename"=>"alienware1"}
+Completed 200 OK in 13ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRZWEpHU25sUVVFaE5VWEJ4VEV0NmNIQkhPVTFsYldWa0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSkphVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZV3hwWlc1M1lYSmxNaTVxY0dWbklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZGhiR2xsYm5kaGNtVXlMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjItMDMtMTVUMDg6MTA6MTUuODYzWiIsInB1ciI6ImJsb2Jfa2V5In19--5ed2dcec52b575e204ba83987bd5bff20efcd03e/alienware2.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22alienware2.jpeg%22%3B+filename%2A%3DUTF-8%27%27alienware2.jpeg" for ::1 at 2022-03-15 13:05:15 +0500
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"alienware2.jpeg\"; filename*=UTF-8''alienware2.jpeg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRZWEpHU25sUVVFaE5VWEJ4VEV0NmNIQkhPVTFsYldWa0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSkphVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZV3hwWlc1M1lYSmxNaTVxY0dWbklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZGhiR2xsYm5kaGNtVXlMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjItMDMtMTVUMDg6MTA6MTUuODYzWiIsInB1ciI6ImJsb2Jfa2V5In19--5ed2dcec52b575e204ba83987bd5bff20efcd03e", "filename"=>"alienware2"}
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for ::1 at 2022-03-15 13:05:20 +0500
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:16
+  Rendered products/index.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 152ms (Views: 139.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/products/4/edit" for ::1 at 2022-03-15 13:05:23 +0500
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:35
+  Rendering products/edit.html.erb within layouts/application
+  Rendered products/_form.html.erb (7.8ms)
+  Rendered products/edit.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 105ms (Views: 92.7ms | ActiveRecord: 1.0ms)
+
+
+Started PATCH "/products/4" for ::1 at 2022-03-15 13:05:34 +0500
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gIFOKuVQrHz+WT9fc1UaoCacqfwoRbhGAZ7eR/GoF/pPjlwjkjRkVb2kieP+vOWNbnb8gxKz/nZa8n7dlKJe2Q==", "product"=>{"title"=>"alienware", "description"=>"alienware test description -edited", "price"=>"200000.0"}, "commit"=>"Update Product", "id"=>"4"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:39
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/products_controller.rb:42
+  [1m[36mProduct Update (2.2ms)[0m  [1m[33mUPDATE "products" SET "description" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["description", "alienware test description -edited"], ["updated_at", "2022-03-15 08:05:34.368604"], ["id", 4]]
+  ↳ app/controllers/products_controller.rb:42
+  [1m[35m (8.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/products_controller.rb:42
+Redirected to http://localhost:3000/products/4
+Completed 302 Found in 39ms (ActiveRecord: 12.3ms)
+
+
+Started GET "/products/4" for ::1 at 2022-03-15 13:05:34 +0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:7
+  Rendering products/show.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ?[0m  [["record_id", 4], ["record_type", "Product"], ["name", "images"]]
+  ↳ app/views/products/show.html.erb:18
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ?[0m  [["record_id", 4], ["record_type", "Product"], ["name", "images"]]
+  ↳ app/views/products/show.html.erb:19
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/products/show.html.erb:19
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/views/products/show.html.erb:19
+  Rendered products/show.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 113ms (Views: 107.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRZWEpHU25sUVVFaE5VWEJ4VEV0NmNIQkhPVTFsYldWa0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSkphVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZV3hwWlc1M1lYSmxNaTVxY0dWbklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZGhiR2xsYm5kaGNtVXlMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjItMDMtMTVUMDg6MTA6MTUuODYzWiIsInB1ciI6ImJsb2Jfa2V5In19--5ed2dcec52b575e204ba83987bd5bff20efcd03e/alienware2.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22alienware2.jpeg%22%3B+filename%2A%3DUTF-8%27%27alienware2.jpeg" for ::1 at 2022-03-15 13:05:34 +0500
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"alienware2.jpeg\"; filename*=UTF-8''alienware2.jpeg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRZWEpHU25sUVVFaE5VWEJ4VEV0NmNIQkhPVTFsYldWa0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSkphVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZV3hwWlc1M1lYSmxNaTVxY0dWbklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZGhiR2xsYm5kaGNtVXlMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjItMDMtMTVUMDg6MTA6MTUuODYzWiIsInB1ciI6ImJsb2Jfa2V5In19--5ed2dcec52b575e204ba83987bd5bff20efcd03e", "filename"=>"alienware2"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRVa0pqYzFCMWJqUTJVM05XU0ZsSVUyUjZRbE5PZFZkNkJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSkphVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZV3hwWlc1M1lYSmxNUzVxY0dWbklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZGhiR2xsYm5kaGNtVXhMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjItMDMtMTVUMDg6MTA6MTUuODY5WiIsInB1ciI6ImJsb2Jfa2V5In19--d832b927698814860c3002f0feed8a8b1b3cc4fa/alienware1.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22alienware1.jpeg%22%3B+filename%2A%3DUTF-8%27%27alienware1.jpeg" for ::1 at 2022-03-15 13:05:34 +0500
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"alienware1.jpeg\"; filename*=UTF-8''alienware1.jpeg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRVa0pqYzFCMWJqUTJVM05XU0ZsSVUyUjZRbE5PZFZkNkJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSkphVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZV3hwWlc1M1lYSmxNUzVxY0dWbklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZGhiR2xsYm5kaGNtVXhMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjItMDMtMTVUMDg6MTA6MTUuODY5WiIsInB1ciI6ImJsb2Jfa2V5In19--d832b927698814860c3002f0feed8a8b1b3cc4fa", "filename"=>"alienware1"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for ::1 at 2022-03-15 13:05:58 +0500
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:16
+  Rendered products/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 88ms (Views: 82.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products/new" for ::1 at 2022-03-15 13:06:37 +0500
+Processing by ProductsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (7.0ms)
+  Rendered products/new.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 119ms (Views: 111.9ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/products" for ::1 at 2022-03-15 13:07:22 +0500
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EjwzbQ1WeXtelEpymR/mM/XpJwWPhe2Fr/OTQNh+BQAmttlXkU/uxk2qVf2ok7IO0VSGjv4Dy1Cj8fAZ+rU9NQ==", "product"=>{"title"=>"mac book", "description"=>"macbook description", "price"=>"111111111111"}, "commit"=>"Create Product"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/products_controller.rb:21
+  [1m[36mProduct Create (1.5ms)[0m  [1m[32mINSERT INTO "products" ("title", "description", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "mac book"], ["description", "macbook description"], ["price", 111111111111.0], ["created_at", "2022-03-15 08:07:22.089861"], ["updated_at", "2022-03-15 08:07:22.089861"]]
+  ↳ app/controllers/products_controller.rb:21
+  [1m[35m (7.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/products_controller.rb:21
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/products_controller.rb:24
+  [1m[35m (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/products_controller.rb:24
+Redirected to http://localhost:3000/products/5
+Completed 302 Found in 37ms (ActiveRecord: 9.6ms)
+
+
+Started GET "/products/5" for ::1 at 2022-03-15 13:07:22 +0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:7
+  Rendering products/show.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ?[0m  [["record_id", 5], ["record_type", "Product"], ["name", "images"]]
+  ↳ app/views/products/show.html.erb:18
+  Rendered products/show.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 95ms (Views: 87.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/products" for ::1 at 2022-03-15 13:07:24 +0500
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ /home/hamid/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:16
+  Rendered products/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 98ms (Views: 90.5ms | ActiveRecord: 0.6ms)
+
+
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" LIMIT ?[0m  [["LIMIT", 11]]

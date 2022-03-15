@@ -10,5 +10,6 @@ class User < ApplicationRecord
   
    enum role: { Buyer: 0, Seller: 1 } 
    devise :registerable, :confirmable
+   has_many :products
 end
 
