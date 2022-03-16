@@ -37,6 +37,7 @@ gem 'mini_magick', '~> 4.8'
 # gem 'client_side_validations'
 gem 'activeadmin'
 gem "hirb"
+gem "pundit"
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
