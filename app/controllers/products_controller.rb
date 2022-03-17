@@ -1,24 +1,24 @@
-class ProductsController < InheritedResources::Base
+class ProductsController < ApplicationController
   def index
-    @products = Product.all
+
+    @products = current_user.Buyer? ? Product.all : current_user.products
+    
+
   end
 
   def show
     @product = Product.find(params[:id])
   end
 
-  
-
-  def edit
-    @product = Product.find(params[:id])
-  end
 
   def new
     @product = Product.new
+    authorize @product
   end
 
   def create
-    @product = Product.create(product_params)
+
+    @product = current_user.products.create(product_params)
 
     respond_to do |format|
       if @product.save
@@ -33,11 +33,12 @@ class ProductsController < InheritedResources::Base
 
   def edit
     @product = Product.find(params[:id])
+    authorize @product
   end
 
   def update
     @product = Product.find(params[:id])
-
+      authorize @product
     respond_to do |format|
       if @product.update(product_params)
         format.html { redirect_to @product, notice: 'Product was successfully updated.' }
@@ -63,6 +64,6 @@ end
   private
 
     def product_params
-      params.require(:product).permit(:title, :description, :price, images: [])
+      params.require(:product).permit(:user_id, :title, :description, :price, images: [])
     end
 
